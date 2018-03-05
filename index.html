@@ -10,6 +10,7 @@
 	<meta name="author" content="Oacreano">
 	<!-- Bootstrap 4.0.0 -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/hidden.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" 
 		rel="stylesheet">
@@ -29,10 +30,10 @@
 							<a id="menu-aberto" href="#">
 								<i class="material-icons md-36 md-light">menu</i>
 							</a>
-							<a id="menu-fechado" href="#" class="invisible">
+							<a id="menu-fechado" href="#" class="hidden-xs-up">
 								<i class="material-icons md-36 md-light">close</i>
 							</a>
-							<div class="m-ver-mais invisible">
+							<div class="m-ver-mais hidden-xs-up">
 								<ul id="menu-lista" class="dropdown">
 									<li class="m-item-editoria">
 										<a href="/politica">Política</a>
@@ -86,13 +87,49 @@
 		</div>
 	</header>
 
-	<div class="oac-opacidade-menu invisible">
-		
+	<div class="oac-opacidade-menu hidden-xs-up"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="oac-publi">
+					<span>Publicidade</span>
+					<div>
+						<a href="/">
+							<img src="assets/images/970x90-publi.jpeg">
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<article class="oac-destaque oac-destaque-esquerdo">
+					<a href="artigo/">
+						<div class="legenda">
+							<span>Oportunidade</span>
+						</div>
+						<div class="sombra"></div>
+						<figure style="background-image: url('assets/images/destaque01.jpeg');">
+						</figure>
+						<div class="titulo">
+							<h1>Detran-AC abre 20 vagas para contratação temporária de examinador de trânsito</h1>
+						</div>
+					</a>
+				</article>
+			</div>
+			<div class="col-sm-6">
+				
+			</div>
+		</div>
 	</div>
 
 
 	<script type="text/javascript" 
 	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" 
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
