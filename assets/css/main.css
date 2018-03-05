@@ -1,0 +1,147 @@
+a, a:link, a:hover {
+    text-decoration: none;
+}
+
+.oac-header{
+	background-color: #306232;
+	width: 100%;
+	height: 90px;
+	display: table;
+    padding: 0px;
+	margin-bottom: 90px;
+	transition: all 5s;
+	position: relative;
+	z-index: 102;
+}
+
+.c-topo {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    display: table;
+    margin: 0px auto;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.oac-header .header-align-items-center{
+	margin-top: 35px;
+}
+
+.oac-logotipo{
+	margin-top: 15px;
+}
+
+.oac-menu-acesso-rapido, #menu-lista{
+    list-style: none;
+}
+
+.oac-menu-acesso-rapido li{
+    position: relative;
+    height: 46px;
+    margin-right: 10px;
+	display: inline-block;
+    vertical-align: top;
+}
+
+.oac-menu-acesso-rapido li a{
+	color: #FFF;
+}
+
+.oac-menu-acesso-rapido li:hover:after {content: ""; width: 100%; position: absolute; left: 0; bottom: -16px; border-bottom: solid 5px #568956; display: inline-block;}
+.oac-menu-acesso-rapido li:first-child + li .mr-titulo:before,
+.oac-menu-acesso-rapido li:first-child + li .mr-titulo:after {content: ""; position: absolute; height: 8px; bottom: 2px; border-left: solid 1px #fff; display: inline-block;}
+.oac-menu-acesso-rapido li:first-child + li .mr-titulo:before {left: -10px;}
+.oac-menu-acesso-rapido li:first-child + li .mr-titulo:after {right: -10px;}
+
+.oac-menu-acesso-rapido li:first-child + li {
+    margin: 0px 10px;
+}
+
+.oac-menu-acesso-rapido li:nth-child(3) {
+    margin-left: 10px;
+}
+
+.oac-menu-acesso-rapido li i{
+	text-align: center;
+	display: block;
+}
+
+.oac-menu-acesso-rapido li span{
+	font: 12px/100% 'Raleway', sans-serif;
+    position: relative;
+    margin-top: 0px;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+}
+
+.m-ver-mais {
+    position: relative;
+    padding-left: 30px;
+}
+.m-ver-mais .dropdown {
+    display: block;
+    width: 364px;
+    height: auto;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    position: absolute;
+    right: -1px;
+    top: 20px;
+    padding: 15px 0px 0px 0px;
+    overflow-x: hidden;
+    z-index: 101;
+}
+.m-ver-mais .dropdown > li {
+    text-align: left;
+}
+.menu-lista .dropdown .m-ico-dropdown {
+    padding: 15px 40px 15px 40px;
+}
+.m-ver-mais .dropdown .m-item-editoria {
+    padding: 15px 85px 15px 20px;
+}
+.m-ver-mais .dropdown .m-item-editoria a {
+    font: 14px/100% 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #306232;
+    display: block;
+    text-transform: uppercase;
+}
+.m-ver-mais .dropdown .m-item-editoria a:hover{
+	color: #568956;
+}
+
+.oac-opacidade-menu {
+    background-color: #000000;
+    height: 100%;
+    opacity: .85;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
