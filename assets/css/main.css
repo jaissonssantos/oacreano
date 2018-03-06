@@ -28,7 +28,7 @@ a, a:link, a:hover {
 }
 
 .oac-header .header-align-items-center{
-	margin-top: 35px;
+	margin-top: 25px;
 }
 
 .oac-logotipo{
@@ -51,7 +51,7 @@ a, a:link, a:hover {
 	color: #FFF;
 }
 
-.oac-menu-acesso-rapido li:hover:after {content: ""; width: 100%; position: absolute; left: 0; bottom: -16px; border-bottom: solid 5px #568956; display: inline-block;}
+.oac-menu-acesso-rapido li:hover:after {content: ""; width: 100%; position: absolute; left: 0; bottom: -18px; border-bottom: solid 5px #568956; display: inline-block;}
 .oac-menu-acesso-rapido li:first-child + li .mr-titulo:before,
 .oac-menu-acesso-rapido li:first-child + li .mr-titulo:after {content: ""; position: absolute; height: 8px; bottom: 2px; border-left: solid 1px #fff; display: inline-block;}
 .oac-menu-acesso-rapido li:first-child + li .mr-titulo:before {left: -10px;}
@@ -91,7 +91,7 @@ a, a:link, a:hover {
     border: solid 1px #ccc;
     position: absolute;
     right: -1px;
-    top: 20px;
+    top: 23px;
     padding: 15px 0px 0px 0px;
     overflow-x: hidden;
     z-index: 101;
@@ -151,6 +151,11 @@ a, a:link, a:hover {
     width: 100%;
 }
 
+.oac-destaque{
+    overflow: hidden;
+    border-radius: 4px;
+}
+
 .oac-destaque-esquerdo{
 	position: relative;
     width: 100%;
@@ -159,15 +164,28 @@ a, a:link, a:hover {
     z-index: 9;
 }
 
+.oac-destaque-direito{
+    position: relative;
+    width: 100%;
+    height: 270px;
+    margin-bottom: 20px;
+    z-index: 9;
+}
+
 .oac-destaque .legenda{
 	position: absolute;
+    text-transform: uppercase;
     padding: 20px;
     color: #fff;
     z-index: 2;
 }
 
-.oac-destaque .legenda:before{
-	content: ""; position: relative; width: 100%; bottom: 2px; border-left: solid 1px #fff; display: inline-block;
+.oac-destaque .legenda span{
+    font-size: .8em;
+}
+
+.oac-destaque .legenda:after{
+	content: ""; position: relative; width: 100%; height: 1px; bottom: 10px; border-bottom: solid 3px #306232; display: inline-block;
 }
 
 .oac-destaque figure{
@@ -179,6 +197,15 @@ a, a:link, a:hover {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.oac-destaque a:hover figure {
+    -webkit-transform: scale(0);
+    transform: scale(1.2);
 }
 
 .oac-destaque .sombra{
@@ -197,6 +224,69 @@ a, a:link, a:hover {
     margin: 0px auto;
     bottom: 0px;
     transition: all 0.4s ease-out;
+    z-index: 2;
+}
+
+.oac-destaque .titulo h1{
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    font-size: 1.8em;
+}
+
+.oac-destaque-direito .titulo h1{
+    font-size: 1.2em;
+}
+
+.bloco-container-1{
+    margin-bottom: 30px;
+}
+
+.bloco-container-1 .chamada{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bloco-container-1 .chamada figure{
+    position: relative;
+    width: 48%;
+    background: #fff;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bloco-container-1 .chamada figure:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.bloco-container-1 .chamada section{
+    position: relative;
+    height: 100%;
+    border: solid 1px #e6e6e6;
+    border-top: none;
+}
+
+.bloco-container-1 .chamada section h3{
+    z-index: 1;
+    width: 100%;
+    border-top: solid 2px;
+    color: #fff;
+    transition: border-color .25s ease-out;
+    border-color: #306232;
+    top: 0;
+}
+
+.bloco-container-1 .chamada section h1{
+    position: relative;
+    color: #306232;
+    position: relative;
+    transition: color .25s ease-out;
+    font: bold 1.375em/120% "Raleway", sans-serif;
+    z-index: -1;
+    top: -10px;
 }
 
 /* Rules for sizing the icon. */
