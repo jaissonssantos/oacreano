@@ -239,6 +239,7 @@ a, a:link, a:hover {
 }
 
 .bloco-container-1{
+    display: flex;
     margin-bottom: 30px;
 }
 
@@ -248,18 +249,30 @@ a, a:link, a:hover {
     width: 100%;
 }
 
-.bloco-container-1 .chamada figure{
+.bloco-container-1 .chamada .picture{
     position: relative;
-    width: 48%;
-    background: #fff;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 365px;
+    height: 245px;
+    background: #f5f5f5;
+    float: left;
+    z-index: 1;
 }
-.bloco-container-1 .chamada figure:before{
+.bloco-container-1 .chamada .picture:before{
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+.bloco-container-1 .chamada figure{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bloco-container-1 .chamada section{
@@ -277,6 +290,16 @@ a, a:link, a:hover {
     transition: border-color .25s ease-out;
     border-color: #306232;
     top: 0;
+    font-size: xx-small;
+}
+.bloco-container-1 .chamada section h3 span{
+    display: inline-block;
+    background: #306232;
+    font-size: 1.013em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transition: background .25s ease-out;
+    padding: 5px;
 }
 
 .bloco-container-1 .chamada section h1{
@@ -284,9 +307,16 @@ a, a:link, a:hover {
     color: #306232;
     position: relative;
     transition: color .25s ease-out;
-    font: bold 1.375em/120% "Raleway", sans-serif;
+    font: bold 1.775em/120% "Raleway", sans-serif;
     z-index: -1;
     top: -10px;
+}
+.bloco-container-1 .chamada section h1 span{
+    width: auto;
+    padding: 16px 20px 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
 }
 
 /* Rules for sizing the icon. */
