@@ -137,7 +137,9 @@ a, a:link, a:hover {
     max-width: inherit;
     height: auto;
 }
-.oac-publi span {
+.oac-publi span,
+.oac-publi-meia-pagina span,
+.oac-publi-retangulo-medio span{
     color: #969696;
     font-size: 8px;
     font-family: Arial, sans-serif;
@@ -149,6 +151,24 @@ a, a:link, a:hover {
     top: -12px;
     right: 0;
     width: 100%;
+}
+
+.oac-publi-meia-pagina{
+    position: relative;
+    background: url(/assets/images/bg-c-publi.png) 0 0 repeat;
+    margin: 0 0 30px 0;
+    height: auto;
+    padding: 88px 0;
+    text-align: center;
+}
+
+.oac-publi-retangulo-medio{
+    position: relative;
+    background: url(/assets/images/bg-c-publi.png) 0 0 repeat;
+    margin: 0 0 30px 0;
+    height: auto;
+    padding: 68px 0;
+    text-align: center;
 }
 
 .oac-destaque{
@@ -238,12 +258,18 @@ a, a:link, a:hover {
     font-size: 1.2em;
 }
 
-.bloco-container-1{
+.bloco-container-1, 
+.bloco-container-2,
+.bloco-container-3,
+.bloco-container-4{
     display: flex;
     margin-bottom: 30px;
 }
 
-.bloco-container-1 .chamada{
+.bloco-container-1 .chamada, 
+.bloco-container-2 .chamada,
+.bloco-container-3 .chamada,
+.bloco-container-4 .chamada{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -257,13 +283,47 @@ a, a:link, a:hover {
     float: left;
     z-index: 1;
 }
-.bloco-container-1 .chamada .picture:before{
+
+.bloco-container-2 .chamada .picture{
+    position: relative;
+    width: 380px;
+    height: 360px;
+    background: #f5f5f5;
+    float: left;
+    z-index: 1;
+}
+
+.bloco-container-3 .chamada .picture{
+    position: relative;
+    width: 177px;
+    height: 177px;
+    background: #f5f5f5;
+    float: left;
+    z-index: 1;
+}
+
+.bloco-container-4 .chamada .picture{
+    position: relative;
+    width: 265px;
+    height: 177px;
+    background: #f5f5f5;
+    float: left;
+    z-index: 1;
+}
+
+.bloco-container-1 .chamada .picture:before, 
+.bloco-container-2 .chamada .picture:before,
+.bloco-container-3 .chamada .picture:before,
+.bloco-container-4 .chamada .picture:before{
     content: "";
     display: block;
     padding-top: 100%;
 }
 
-.bloco-container-1 .chamada figure{
+.bloco-container-1 .chamada figure, 
+.bloco-container-2 .chamada figure,
+.bloco-container-3 .chamada figure,
+.bloco-container-4 .chamada figure{
     position: absolute;
     top: 0;
     left: 0;
@@ -275,14 +335,20 @@ a, a:link, a:hover {
     background-repeat: no-repeat;
 }
 
-.bloco-container-1 .chamada section{
+.bloco-container-1 .chamada section, 
+.bloco-container-2 .chamada section,
+.bloco-container-3 .chamada section,
+.bloco-container-4 .chamada section{
     position: relative;
     height: 100%;
     border: solid 1px #e6e6e6;
     border-top: none;
 }
 
-.bloco-container-1 .chamada section h3{
+.bloco-container-1 .chamada section h3, 
+.bloco-container-2 .chamada section h3,
+.bloco-container-3 .chamada section h3,
+.bloco-container-4 .chamada section h3{
     z-index: 1;
     width: 100%;
     border-top: solid 2px;
@@ -292,7 +358,11 @@ a, a:link, a:hover {
     top: 0;
     font-size: xx-small;
 }
-.bloco-container-1 .chamada section h3 span{
+
+.bloco-container-1 .chamada section h3 span,
+.bloco-container-2 .chamada section h3 span,
+.bloco-container-3 .chamada section h3 span,
+.bloco-container-4 .chamada section h3 span{
     display: inline-block;
     background: #306232;
     font-size: 1.013em;
@@ -307,10 +377,11 @@ a, a:link, a:hover {
     color: #306232;
     position: relative;
     transition: color .25s ease-out;
-    font: bold 1.575em/120% "Raleway", sans-serif;
+    font: bold 1.575em/130% "Raleway", sans-serif;
     z-index: -1;
     top: -10px;
 }
+
 .bloco-container-1 .chamada section h1 span{
     width: auto;
     padding: 16px 20px 0 20px;
@@ -319,21 +390,82 @@ a, a:link, a:hover {
     padding-left: 30px;
 }
 
-.bloco-container-1 .chamada section h4{
+.bloco-container-2 .chamada section h1{
     position: relative;
-    color: #666;
+    color: #306232;
     position: relative;
     transition: color .25s ease-out;
-    font: 0.975em/120% "Raleway", sans-serif;
+    font: bold 1.275em/130% "Raleway", sans-serif;
     z-index: -1;
-    top: -10px;
 }
-.bloco-container-1 .chamada section h4 span{
+
+.bloco-container-2 .chamada section h1 span{
     width: auto;
     padding: 16px 20px 0 20px;
     display: table-cell;
     vertical-align: middle;
     padding-left: 30px;
+}
+
+.bloco-container-3 .chamada section h1{
+    position: relative;
+    color: #306232;
+    position: relative;
+    transition: color .25s ease-out;
+    font: bold 0.775em/130% "Raleway", sans-serif;
+    z-index: -1;
+}
+
+.bloco-container-3 .chamada section h1 span{
+    width: auto;
+    padding: 16px 20px 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.bloco-container-4 .chamada section h1{
+    position: relative;
+    color: #306232;
+    position: relative;
+    transition: color .25s ease-out;
+    font: bold 0.975em/130% "Raleway", sans-serif;
+    z-index: -1;
+}
+
+.bloco-container-4 .chamada section h1 span{
+    width: auto;
+    padding: 16px 20px 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.bloco-container-1 .chamada section h4,
+.bloco-container-2 .chamada section h4,
+.bloco-container-3 .chamada section h4,
+.bloco-container-4 .chamada section h4{
+    position: relative;
+    color: #666;
+    position: relative;
+    transition: color .25s ease-out;
+    font: 0.975em/130% "Raleway", sans-serif;
+    z-index: -1;
+    top: -10px;
+}
+.bloco-container-1 .chamada section h4 span,
+.bloco-container-2 .chamada section h4 span,
+.bloco-container-3 .chamada section h4 span,
+.bloco-container-4 .chamada section h4 span{
+    width: auto;
+    padding: 16px 20px 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.container-video{
+    height: 620px;
 }
 
 .header-video{
@@ -507,7 +639,7 @@ a, a:link, a:hover {
     color: #FFF;
     position: relative;
     transition: color .25s ease-out;
-    font: 500 .875em/120% "Raleway", sans-serif;
+    font: 500 .875em/130% "Raleway", sans-serif;
     z-index: -1;
     top: -10px;
 }
