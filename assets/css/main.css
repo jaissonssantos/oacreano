@@ -261,7 +261,8 @@ a, a:link, a:hover {
 .bloco-container-1, 
 .bloco-container-2,
 .bloco-container-3,
-.bloco-container-4{
+.bloco-container-4,
+.bloco-container-5{
     display: flex;
     margin-bottom: 30px;
 }
@@ -269,7 +270,8 @@ a, a:link, a:hover {
 .bloco-container-1 .chamada, 
 .bloco-container-2 .chamada,
 .bloco-container-3 .chamada,
-.bloco-container-4 .chamada{
+.bloco-container-4 .chamada,
+.bloco-container-5 .chamada{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -311,10 +313,20 @@ a, a:link, a:hover {
     z-index: 1;
 }
 
+.bloco-container-5 .chamada .picture{
+    position: relative;
+    width: 160px;
+    height: 105px;
+    background: #f5f5f5;
+    float: left;
+    z-index: 1;
+}
+
 .bloco-container-1 .chamada .picture:before, 
 .bloco-container-2 .chamada .picture:before,
 .bloco-container-3 .chamada .picture:before,
-.bloco-container-4 .chamada .picture:before{
+.bloco-container-4 .chamada .picture:before,
+.bloco-container-5 .chamada .picture:before{
     content: "";
     display: block;
     padding-top: 100%;
@@ -323,7 +335,8 @@ a, a:link, a:hover {
 .bloco-container-1 .chamada figure, 
 .bloco-container-2 .chamada figure,
 .bloco-container-3 .chamada figure,
-.bloco-container-4 .chamada figure{
+.bloco-container-4 .chamada figure,
+.bloco-container-5 .chamada figure{
     position: absolute;
     top: 0;
     left: 0;
@@ -338,7 +351,8 @@ a, a:link, a:hover {
 .bloco-container-1 .chamada section, 
 .bloco-container-2 .chamada section,
 .bloco-container-3 .chamada section,
-.bloco-container-4 .chamada section{
+.bloco-container-4 .chamada section,
+.bloco-container-5 .chamada section{
     position: relative;
     height: 100%;
     border: solid 1px #e6e6e6;
@@ -348,7 +362,8 @@ a, a:link, a:hover {
 .bloco-container-1 .chamada section h3, 
 .bloco-container-2 .chamada section h3,
 .bloco-container-3 .chamada section h3,
-.bloco-container-4 .chamada section h3{
+.bloco-container-4 .chamada section h3,
+.bloco-container-5 .chamada section h3{
     z-index: 1;
     width: 100%;
     border-top: solid 2px;
@@ -362,7 +377,8 @@ a, a:link, a:hover {
 .bloco-container-1 .chamada section h3 span,
 .bloco-container-2 .chamada section h3 span,
 .bloco-container-3 .chamada section h3 span,
-.bloco-container-4 .chamada section h3 span{
+.bloco-container-4 .chamada section h3 span,
+.bloco-container-5 .chamada section h3 span{
     display: inline-block;
     background: #306232;
     font-size: 1.013em;
@@ -434,6 +450,23 @@ a, a:link, a:hover {
 }
 
 .bloco-container-4 .chamada section h1 span{
+    width: auto;
+    padding: 16px 20px 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+
+.bloco-container-5 .chamada section h1{
+    position: relative;
+    color: #306232;
+    position: relative;
+    transition: color .25s ease-out;
+    font: bold 0.975em/130% "Raleway", sans-serif;
+    z-index: -1;
+}
+
+.bloco-container-5 .chamada section h1 span{
     width: auto;
     padding: 16px 20px 0 20px;
     display: table-cell;
@@ -648,6 +681,120 @@ a, a:link, a:hover {
     padding: 16px 0px 0 20px;
     display: table-cell;
     vertical-align: middle;
+}
+
+.oac-populares{
+	border: 1px solid #e6e6e6;
+    padding: 35px 30px 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.oac-populares .titulo-box{
+	position: absolute;
+    top: 26px;
+    font-size: 28px;
+    margin: 0 0 35px 0;
+    padding: 0 10px;
+    display: table;
+    border-left: 1px solid #306232;
+    border-right: 1px solid #306232;
+    color: #306232;
+    font: bold 24px/75% 'Raleway',sans-serif;
+}
+
+.oac-populares .sub-editorias{
+	width: 100%;
+    display: block;
+    margin: 30px 0 25px;
+}
+
+.oac-populares .sub-editorias a:first-child {
+    margin-left: 0;
+}
+
+.oac-populares .sub-editorias a{
+	margin: 0 20px;
+}
+
+.oac-populares .sub-editorias a{
+	display: inline-block;
+    text-transform: uppercase;
+    color: #5a5a5a;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+.oac-populares .sub-editorias a:hover{
+	color: #222;
+}
+
+.oac-mais-lidas{
+	border: 1px solid #e6e6e6;
+    padding: 35px 30px 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.oac-mais-lidas .titulo-box{
+	position: relative;
+    top: -10px;
+    font-size: 28px;
+    margin: 0;
+    padding: 0 10px;
+    display: table;
+    color: #306232;
+    font: bold 24px/75% 'Raleway',sans-serif;
+}
+
+.oac-mais-lidas ol{
+	list-style: none;
+	margin: 0;
+    padding: 0
+}
+
+.oac-mais-lidas ol li{
+	border-bottom: 1px solid #e6e6e6;
+    padding: 15px 0 10px 0;
+    width: 100%;
+}
+
+.oac-mais-lidas ol li:last-child{
+	border: none;
+}
+
+.oac-mais-lidas ol li span{
+	font: 200 2.250em 'Raleway', serif;
+    color: #969696;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.oac-mais-lidas ol li .chamada{
+	display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid #e6e6e6;
+    padding-left: 0.938em;
+}
+
+.oac-mais-lidas ol li .chamada span{
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #6E6E6E;
+    font: 300 0.813em/20px "Raleway",sans-serif;
+    position: relative;
+    padding: 0;
+}
+
+.oac-mais-lidas ol li .chamada h1{
+	font: 400 1em/1em "Source Sans Pro",sans-serif;
+    color: #306232;
+    height: 35px;
+    overflow: hidden;
 }
 
 /* Rules for sizing the icon. */
