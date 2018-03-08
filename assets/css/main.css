@@ -27,18 +27,53 @@ a, a:link, a:hover {
     text-align: center;
 }
 
-.oac-topo-reduzido{
-    background: #306232;
-    width: 100%;
-    height: 60px;
-}
-
 .oac-header .header-align-items-center{
 	margin-top: 25px;
 }
 
+.oac-topo-reduzido{
+    background: #306232;
+    width: 100%;
+    height: 60px;
+    transition: all 0.4s ease-out;
+}
+
+.oac-topo-reduzido .header-align-items-center{
+	margin: 0;
+}
+
+.oac-topo-reduzido .oac-menu{
+	margin-top: 10px;
+}
+
+.oac-topo-reduzido .oac-logotipo{
+	margin-top: 5px;
+}
+
+.oac-topo-reduzido .oac-logotipo img{
+	width: 220px;
+}
+
+.oac-topo-reduzido .oac-menu-acesso-rapido li,
+.oac-topo-reduzido .oac-menu-acesso-rapido li:first-child + li{
+	height: auto;
+	margin-top: 18px;
+}
+
+.oac-topo-reduzido .oac-menu-acesso-rapido li span{
+	display: none;
+}
+
+.oac-topo-reduzido .m-ver-mais .dropdown{
+	top: 9px;
+}
+
 .oac-logotipo{
 	margin-top: 15px;
+}
+
+.oac-logotipo img{
+	transition: all 5s;
 }
 
 .oac-menu-acesso-rapido, #menu-lista{
@@ -101,6 +136,7 @@ a, a:link, a:hover {
     padding: 15px 0px 0px 0px;
     overflow-x: hidden;
     z-index: 101;
+    border-top: none;
 }
 .m-ver-mais .dropdown > li {
     text-align: left;
@@ -120,6 +156,57 @@ a, a:link, a:hover {
 }
 .m-ver-mais .dropdown .m-item-editoria a:hover{
 	color: #568956;
+}
+
+.m-ver-mais .dropdown .m-ico-dropdown{
+	padding: 15px 40px 15px 20px;
+}
+
+.m-ver-mais .dropdown .m-ico-dropdown a {
+    cursor: pointer;
+    position: relative;
+    padding-right: 45px;
+}
+
+.m-ver-mais .dropdown .m-ico-dropdown > a:after {
+    width: 10px;
+    height: 10px;
+    right: 5px;
+    top: 4px;
+    content: "";
+    border-left: 1px solid #717171;
+    border-top: 1px solid #717171;
+    display: inline-block;
+    font-size: 10px;
+    overflow: hidden;
+    position: absolute;
+    -ms-transform: rotate(-145deg) skew(-20deg);
+    -webkit-transform: rotate(-145deg) skew(-20deg);
+    transform: rotate(-145deg) skew(-20deg);
+    -webkit-transition: transform 0.5s ease-in-out, top 0.5s;
+    transition: transform 0.5s ease-in-out, top 0.5s;
+}
+
+.m-ver-mais .dropdown .m-ico-dropdown ul{
+	list-style: none;
+    display: none;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.m-ver-mais .dropdown .sub-dropdown-open{
+	display: block !important;
+}
+
+.m-ver-mais .dropdown .sub-dropdown li {
+    padding: 15px 0px 15px 0px;
+}
+
+.m-ver-mais .dropdown .sub-dropdown li a {
+    font-size: 14px;
+    color: #5a5a5a;
+    font-weight: 300;
 }
 
 .oac-opacidade-menu {
