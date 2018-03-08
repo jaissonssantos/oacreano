@@ -55,7 +55,7 @@
 									</li>
 									<li class="m-item-editoria m-ico-dropdown">
 										<a id="sub" href="javascript:;">Baixo Acre</a>
-										<ul class="sub-dropdown">
+										<ul class="sub-dropdown sub-dropdown-open">
 											<li><a href="/acrelandia">Acrelândia</a></li>
 											<li><a href="/bujari">Bujari</a></li>
 											<li><a href="/capixaba">Capixaba</a></li>
@@ -132,6 +132,10 @@
 									<i class="material-icons md-light">search</i>
 									<span class="mr-titulo">Busca</span>
 								</a>
+								<a id="busca_off" href="#" class="hidden-xs-up">
+									<i class="material-icons md-light">close</i>
+									<span class="mr-titulo">Busca</span>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -140,6 +144,14 @@
 		</div>
 		</section>
 	</header>
+
+	<div class="oac-search-box hidden-xs-up">
+		<form method="get" action="/busca">
+			<input type="text" name="s" id="s" value="Busca" 
+			onfocus="if (this.value == 'Busca'){ this.value = ''; }" 
+			onblur="if (this.value == '') { this.value = 'Busca' }">
+		</form>
+	</div>
 
 	<div class="oac-opacidade-menu hidden-xs-up"></div>
 
