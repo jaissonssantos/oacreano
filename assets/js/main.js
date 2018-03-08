@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+    var $window = $(window);
+    var header = $('.oac-topo');
+    $window.scroll(function () {
+        if ($window.scrollTop() >= 255) {
+            header.addClass('oac-topo-reduzido');
+        } else {
+            header.removeClass('oac-topo-reduzido');
+        }
+    });
+
     //menu abre
     $('a#menu-aberto').on('click',function(event){
         $(this).addClass('hidden-xs-up');
