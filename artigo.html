@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oacreano - Notícias do acre</title>
+	<meta name="description" content="Oacreano - description">
+	<meta name="author" content="Oacreano">
+	<!-- Bootstrap 4.0.0 -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/hidden.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" 
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    	rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
+    	rel="stylesheet">
+</head>
+
+<body>
+
+
+	<header class="oac-header">
+		<section class="oac-topo">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="header-align-items-center text-left">
+						<div class="oac-menu">
+							<a id="menu-aberto" href="#">
+								<i class="material-icons md-36 md-light">menu</i>
+							</a>
+							<a id="menu-fechado" href="#" class="hidden-xs-up">
+								<i class="material-icons md-36 md-light">close</i>
+							</a>
+							<div class="m-ver-mais hidden-xs-up">
+								<ul id="menu-lista" class="dropdown">
+									<li class="m-item-editoria">
+										<a href="/">Capa</a>
+									</li>
+									<li class="m-item-editoria">
+										<a href="/politica">Política</a>
+									</li>
+									<li class="m-item-editoria">
+										<a href="/policia">Polícia</a>
+									</li>
+									<li class="m-item-editoria">
+										<a href="/policia">Vídeos</a>
+									</li>
+									<li class="m-item-editoria">
+										<a href="/policia">Concursos</a>
+									</li>
+									<li class="m-item-editoria m-ico-dropdown">
+										<a id="sub" href="javascript:;">Baixo Acre</a>
+										<ul class="sub-dropdown sub-dropdown-open">
+											<li><a href="/acrelandia">Acrelândia</a></li>
+											<li><a href="/bujari">Bujari</a></li>
+											<li><a href="/capixaba">Capixaba</a></li>
+											<li><a href="/placido-de-castro">Plácido de Castro</a></li>
+											<li><a href="/porto-acre">Porto Acre</a></li>
+											<li><a href="/rio-branco">Rio Branco</a></li>
+											<li><a href="/senador-guiomard">Senador Guiomard</a></li>
+										</ul>
+									</li>
+									<li class="m-item-editoria m-ico-dropdown">
+										<a id="sub" href="javascript:;">Alto Acre</a>
+										<ul class="sub-dropdown">
+											<li><a href="/assis-brasil">Assis Brasil</a></li>
+											<li><a href="/brasileia">Brasiléia</a></li>
+											<li><a href="/epitaciolandia">Epitaciolândia</a></li>
+											<li><a href="/xapuri">Xapuri</a></li>
+										</ul>
+									</li>
+									<li class="m-item-editoria m-ico-dropdown">
+										<a id="sub" href="javascript:;">Purus</a>
+										<ul class="sub-dropdown">
+											<li><a href="/manoel-urbano">Manoel Urbano</a></li>
+											<li><a href="/santa-rosa-do-purus">Santa Rosa do Purus</a></li>
+											<li><a href="/sena-madureira">Sena Madureira</a></li>
+										</ul>
+									</li>
+									<li class="m-item-editoria m-ico-dropdown">
+										<a id="sub" href="javascript:;">Tarauacá/Envira</a>
+										<ul class="sub-dropdown">
+											<li><a href="/tarauaca">Tarauacá</a></li>
+											<li><a href="/feijo">Feijó</a></li>
+											<li><a href="/jordao">Jordão</a></li>
+										</ul>
+									</li>
+									<li class="m-item-editoria m-ico-dropdown">
+										<a id="sub" href="javascript:;">Juruá</a>
+										<ul class="sub-dropdown">
+											<li><a href="/cruzeiro-do-sul">Cruzeiro do sul</a></li>
+											<li><a href="/mancio-lima">Mâncio lima</a></li>
+											<li><a href="/rodrigues-alves">Rodrigues Alves</a></li>
+											<li><a href="/marechal-thaumaturgo">Marechal Thaumaturgo</a></li>
+											<li><a href="/porto-walter">Porto Walter</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="oac-logotipo">
+						<a href="/">
+							<img src="/assets/images/ic_oacreano.svg">
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="oac-acesso-rapido float-right header-align-items-center">
+						<ul class="oac-menu-acesso-rapido">
+							<li>
+								<a href="/populares">
+									<i class="material-icons md-light">trending_up</i>
+									<span class="mr-titulo">Populares</span>
+								</a>
+							</li>
+							<li>
+								<a href="/ultimas">
+									<i class="material-icons md-light">access_time</i>
+									<span class="mr-titulo">Últimas</span>
+								</a>
+							</li>
+							<li>
+								<a id="busca" href="#">
+									<i class="material-icons md-light">search</i>
+									<span class="mr-titulo">Busca</span>
+								</a>
+								<a id="busca_off" href="#" class="hidden-xs-up">
+									<i class="material-icons md-light">close</i>
+									<span class="mr-titulo">Busca</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+	</header>
+
+	<div class="oac-search-box hidden-xs-up">
+		<form method="get" action="/busca">
+			<input type="text" name="s" id="s" value="Busca" 
+			onfocus="if (this.value == 'Busca'){ this.value = ''; }" 
+			onblur="if (this.value == '') { this.value = 'Busca' }">
+		</form>
+	</div>
+
+	<div class="oac-opacidade-menu hidden-xs-up"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="oac-publi">
+					<span>Publicidade</span>
+					<div>
+						<a href="/">
+							<img src="assets/images/970x90-publi.jpeg">
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<article class="oac-article">
+
+					<div class="header">
+						<div class="offset-2 col-sm-8">
+							<h3 class="legenda">
+								<span>Astronauta</span>		
+							</h3>
+							<h1>Quem é o brasileiro que fez do espaço um negócio e virou ministeriável de Bolsonaro</h1>
+							<h2>Marcos Pontes passou dez dias na órbita da Terra e fez dessa experiência um bom negócio, com palestras, livros e patrocínio de produtos. Em 2014, foi candidato a deputado, mas não se elegeu</h2>
+
+							<div class="compartilhar">
+								<ul>
+									<li>
+										<a href="#" title="Facebook">
+											<i class="fab fa-facebook-square facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Twitter">
+											<i class="fab fa-twitter twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Google + ">
+											<i class="fab fa-google-plus-g gplus"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Enviar por e-mail">
+											<i class="fas fa-envelope email"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="creditos">
+								<ul>
+									<li><span>Hedislandes Gadelha</span></li>
+									<li><span>[08/03/2018]</span></li>
+									<li><span>[21h42]</span></li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="imagem">
+							<picture>
+								<img src="/assets/images/destaque08.jpg">
+							</picture>
+						</div>
+					</div>
+
+					<div class="article-text">
+						<div class="row">
+							<div class="offset-2 col-sm-8">
+								<p>Anunciado pelo presidenciável Jair Bolsonaro (PSL) como seu virtual ministro da Ciência e Tecnologia caso vença a eleição, o primeiro astronauta brasileiro, o tenente-coronel da reserva Marcos Pontes, de 54 anos, gostou da ideia. Depois de um encontro com o deputado em seu gabinete na tarde de quarta-feira (7), em Brasília, Pontes publicou um vídeo desse momento (assista abaixo) e respondeu que aceita a empreitada com um jargão militar: "missão dada é missão cumprida".</p>
+								<p>Marcos Pontes fez da sua ida ao espaço, em 2006, um caso de sucesso nos negócios. Ao retornar dos céus e regressar à caserna, deixou as Forças Armadas. Noticiário da época o acusou de optar pela vida privada para ganhar dinheiro, fazendo palestras, por exemplo. Em suas redes sociais, ele nega essa versão e acusa quem publicou essa informação de se autopromover e possivelmente ter recebido "propina".&nbsp;</p>
+								<p>Pontes afirma que não se aposentou mas que foi transferido para a reserva por determinação do Comando da Aeronáutica e que nada tem a ver com sua função de astronauta, que é civil. Eles diz que não queria se aposentar e que ficar na ativa, segundo ele, seria mais confortável, mas a legislação militar não permitiria sua promoção para coronel.&nbsp;"Continuo à disposição do Brasil, como único astronauta profissional do país", afirma Pontes em seu site.&nbsp;</p>
+								<p>Marcos Pontes foi fazer palestras, lançar livro, ser garoto-propaganda de travesseiro e criou a Agência Marcos Pontes, que já promoveu aventuras como viagens espaciais, e eventos como "seja cosmonauta por 10 dias", "flutue em gravidade zero", além de visita a bases espaciais no exterior e excursões do tipo "conheça Cabo Canaveral com Marcos Pontes".&nbsp; E até voos em jatos supersônicos aos interessados, entre outros "produtos".&nbsp;</p>
+								<p>Uma palestra do primeiro astronauta brasileiro estaria em torno de R$ 15 mil, segundo informações de profissionais que atuam nesse mercado. O travesseiro que ele promoveu era da marca "Nasa", que significa “Nobre e Autêntico Suporte Anatômico”. Isso foi em 2011.&nbsp;</p>
+								<p>Com a visibilidade e promoção alcançadas, Pontes tentou, mas sem o mesmo sucesso, a carreira política. Se candidatou a deputado federal por São Paulo em 2014, pelo PSB, e apoiou Marina Silva para presidente. Hoje ela está na Rede e será provável adversária de Bolsonaro na disputa ao Palácio do Planalto. O primeiro e única astronauta brasileiro até obteve uma votação razoável – 43.707 votos –, mas insuficiente para levá-lo à Câmara. Agora, vê a chance de ser ministro.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="compartilhar-footer">
+						<ul>
+							<li>
+								<a href="#" title="Facebook">
+									<i class="fab fa-facebook-square facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Twitter">
+									<i class="fab fa-twitter twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Google + ">
+									<i class="fab fa-google-plus-g gplus"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Enviar por e-mail">
+									<i class="fas fa-envelope email"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</article>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="oac-publi">
+					<span>Publicidade</span>
+					<div>
+						<a href="/">
+							<img src="assets/images/970x90-publi.jpeg">
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<section class="oac-article-mais-lidas mt-3">
+
+				<div class="col-sm-12">
+					<h2 class="header">
+						<a title="Mais lidas do OAcreano">mais lidas do<span>OAcreano</span></a>
+					</h2>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="bloco-container-6">
+								<article class="chamada">
+									<a href="artigo/">
+										<div class="picture">
+											<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+										</div>
+										<section>
+											<h3><span>Apreensão</span></h3>
+											<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+										</section>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="bloco-container-6">
+								<article class="chamada">
+									<a href="artigo/">
+										<div class="picture">
+											<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+										</div>
+										<section>
+											<h3><span>Apreensão</span></h3>
+											<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+										</section>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="bloco-container-6">
+								<article class="chamada">
+									<a href="artigo/">
+										<div class="picture">
+											<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+										</div>
+										<section>
+											<h3><span>Apreensão</span></h3>
+											<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+										</section>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="bloco-container-6">
+								<article class="chamada">
+									<a href="artigo/">
+										<div class="picture">
+											<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+										</div>
+										<section>
+											<h3><span>Apreensão</span></h3>
+											<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+										</section>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="bloco-container-6">
+								<article class="chamada">
+									<a href="artigo/">
+										<div class="picture">
+											<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+										</div>
+										<section>
+											<h3><span>Apreensão</span></h3>
+											<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+										</section>
+									</a>
+								</article>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="bloco-container-6">
+								<article class="chamada">
+									<a href="artigo/">
+										<div class="picture">
+											<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+										</div>
+										<section>
+											<h3><span>Apreensão</span></h3>
+											<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+										</section>
+									</a>
+								</article>
+							</div>
+						</div>
+					</div><!--end .row-->
+				</div><!--end .container-->
+
+			</section>
+		</div>
+
+		<div class="row">
+			<div class="footer-bar">
+				<div class="container">
+					<div class="col-sm-12">
+						<h1 class="float-left">Acompanhe OACREANO nas redes sociais</h1>
+						<section class="icons float-left">
+							<a href="facebook/">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a href="facebook/">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="facebook/">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div><!--end .container-->
+
+	<footer class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="funcional">
+					<ul>
+						<li><a href="expediente/">Expediente</a></li>
+						<li><a href="expediente/">Política de privacidade</a></li>
+						<li><a href="expediente/">Anuncie conosco</a></li>
+						<li><a href="expediente/">Mapa do site</a></li>
+						<li><a href="expediente/">Termos de uso</a></li>
+						<li><a href="expediente/">Fale conosco</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="col-sm-12">
+				<div class="copyright">
+					<p>Os conteúdos assinados são de responsabilidade de seus respectivos autores. As pessoas citadas nos conteúdos têm direito de resposta garantida.</p>
+					<p>Copyright © 2014-2018 OAcreano.com.br - Todos direitos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" 
+	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" 
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -66,4 +66,6 @@ $(document).ready(function(){
         return false;
     });
 
+    //https://stackoverflow.com/questions/21447947/jquery-fixing-a-side-bar-while-scrolling-until-bottom
+
 });
