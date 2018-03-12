@@ -54,10 +54,15 @@ a, a:link, a:hover {
 	width: 220px;
 }
 
+.oac-topo-reduzido .oac-acesso-rapido{
+	height: 60px;
+}
+
 .oac-topo-reduzido .oac-menu-acesso-rapido li,
 .oac-topo-reduzido .oac-menu-acesso-rapido li:first-child + li{
 	height: auto;
-	margin-top: 18px;
+	padding-top: 18px !important;
+	padding-bottom: 18px !important;
 }
 
 .oac-topo-reduzido .oac-menu-acesso-rapido li span{
@@ -76,8 +81,22 @@ a, a:link, a:hover {
 	transition: all 5s;
 }
 
-.oac-menu-acesso-rapido, #menu-lista{
+#menu-lista{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.oac-acesso-rapido{
+	margin-top: 0;
+    height: 90px;
+}
+
+.oac-menu-acesso-rapido{
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    height: inherit;
 }
 
 .oac-menu-acesso-rapido li{
@@ -88,11 +107,17 @@ a, a:link, a:hover {
     vertical-align: top;
 }
 
+.oac-menu-acesso-rapido li:first-child{
+	background: #FF6A33;
+    height: inherit;
+    padding: 22px 10px;
+}
+
 .oac-menu-acesso-rapido li a{
 	color: #FFF;
 }
 
-.oac-menu-acesso-rapido li:hover:after {content: ""; width: 100%; position: absolute; left: 0; bottom: -18px; border-bottom: solid 5px #568956; display: inline-block;}
+.oac-menu-acesso-rapido li:hover:after {content: ""; width: 100%; position: absolute; left: 0; bottom: 0px; border-bottom: solid 5px #568956; display: inline-block;}
 .oac-menu-acesso-rapido li:first-child + li .mr-titulo:before,
 .oac-menu-acesso-rapido li:first-child + li .mr-titulo:after {content: ""; position: absolute; height: 8px; bottom: 2px; border-left: solid 1px #fff; display: inline-block;}
 .oac-menu-acesso-rapido li:first-child + li .mr-titulo:before {left: -10px;}
@@ -100,10 +125,14 @@ a, a:link, a:hover {
 
 .oac-menu-acesso-rapido li:first-child + li {
     margin: 0px 10px;
+    height: inherit;
+    padding: 22px 10px;
 }
 
 .oac-menu-acesso-rapido li:nth-child(3) {
     margin-left: 10px;
+    height: inherit;
+    padding: 22px 0px;
 }
 
 .oac-menu-acesso-rapido li i{
@@ -1175,6 +1204,11 @@ footer .copyright{
 .oac-article .compartilhar ul li i.email,
 .oac-article .compartilhar-footer ul li i.email{
 	color: #bbb;
+}
+
+.oac-article .compartilhar ul li i.whats,
+.oac-article .compartilhar-footer ul li i.whats{
+	color: #25e47a;
 }
 
 .oac-article .compartilhar-footer{
