@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "ecos-icons";
+    src: url("fonts/ecosicons-Regular-129ec6aa60e72f045d121fb95d83a8f3.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/ecosicons-Regular-5f8f1bc11277c23f33b32e56987a0710.ttf") format("truetype"), 
+    url("fonts/ecosicons-Regular-913cb629d7251366e7dc3da6e578ad4f.svg#ecos_icons") format("svg");
+}
+.ecos_icons{font-family:'ecos-icons';font-weight:normal;font-style:normal;line-height:1;letter-spacing:0;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.ecos_icons.lock:before{content:'\e000'}
+.ecos_icons.f-facebook:before{content:'\e001'}
+.ecos_icons.share-facebook:before{content:'\e002'}
+.ecos_icons.share-googleplus:before{content:'\e003'}
+.ecos_icons.share-twitter:before{content:'\e004'}
+.ecos_icons.magnifying:before{content:'\e005'}
+.ecos_icons.check:before{content:'\e006'}
+.ecos_icons.close:before{content:'\e007'}
+.ecos_icons.plus:before{content:'\e008'}
+.ecos_icons.arrow_left:before{content:'\e009'}
+.ecos_icons.arrow_right:before{content:'\e00a'}
+.ecos_icons.arrow_up:before{content:'\e00b'}
+.ecos_icons.arrow_down:before{content:'\e00c'}
+.ecos_icons.info:before{content:'\e00d'}
+.ecos_icons.list_mobile:before{content:'\e00e'}
+.ecos_icons.play:before{content:'\e00f'}
+.ecos_icons.logo_globo:before{content:'\e010'}
+.ecos_icons.logo_tv:before{content:'\e011'}
+.ecos_icons.logo_tv-2:before{content:'\e012'}
+.ecos_icons.camera:before{content:'\e013'}
+.ecos_icons.user:before{content:'\e014'}
+.ecos_icons.signal:before{content:'\e015'}
+.ecos_icons.logo_musica:before{content:'\e016'}
+.ecos_icons.logo_com-br:before{content:'\e017'}
+.ecos_icons.clock:before{content:'\e018'}
+.ecos_icons.heart:before{content:'\e019'}
+.ecos_icons.arrow_left_thin:before{content:'\e01a'}
+.ecos_icons.arrow_up_thin:before{content:'\e01b'}
+.ecos_icons.arrow_down_thin:before{content:'\e01c'}
+.ecos_icons.arrow_right_thin:before{content:'\e01d'}
+.ecos_icons.logo_muu:before{content:'\e01e'}
+.ecos_icons.logo_globocom:before{content:'\e01f'}
+.ecos_icons.logo_gplay:before{content:'\e020'}
+.ecos_icons.arrow_top:before{content:'\e021'}
+.ecos_icons.new_window:before{content:'\e022'}
+.ecos_icons.warning:before{content:'\e023'}
+.ecos_icons.play_rounded:before{content:'\e024'}
+.ecos_icons.logo_apple:before{content:'\e025'}
+.ecos_icons.logo_android:before{content:'\e026'}
+.ecos_icons.logo_windows8:before{content:'\e027'}
+.ecos_icons.logo_xbox:before{content:'\e028'}
+.ecos_icons.trash:before{content:'\e029'}
+.ecos_icons.heart2:before{content:'\e02a'}
+.ecos_icons.clock2:before{content:'\e02b'}
+.ecos_icons.subscribed-program:before{content:'\e02c'}
+.ecos_icons.history:before{content:'\e02d'}
+.ecos_icons.gear:before{content:'\e02e'}
+.ecos_icons.xbox:before{content:'\e02f'}
+.ecos_icons.mobile:before{content:'\e030'}
+.ecos_icons.tv:before{content:'\e031'}
+.ecos_icons.computer:before{content:'\e032'}
