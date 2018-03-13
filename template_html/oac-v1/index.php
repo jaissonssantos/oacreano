@@ -21,12 +21,18 @@
              query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
             <?php if (have_posts()): while (have_posts()) : the_post();?>
 			<article class="oac-destaque oac-destaque-esquerdo">
-				<a href="artigo.html">
+				<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+					<?php 
+                        $key_legenda = "artigo_legenda";
+                        $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+                        if(isset($cp_legenda) && $cp_legenda >= '') :
+                    ?>
 					<div class="legenda">
-						<span>Oportunidade</span>
+						<span><?=$cp_legenda?></span>
 					</div>
+					<?php endif; ?>
 					<div class="sombra"></div>
-					<figure style="background-image: url('assets/images/destaque01.jpg');">
+					<figure style="background-image: url('<?php the_post_thumbnail('image-thumb-300x100'); ?>');">
 					</figure>
 					<div class="titulo">
 						<h1>Detran-AC abre 20 vagas para contratação temporária de examinador de trânsito</h1>

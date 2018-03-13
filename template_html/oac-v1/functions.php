@@ -13,8 +13,8 @@ add_theme_support( 'post-thumbnails' );
 	
 if ( function_exists( 'add_image_size' ) ) { 
 	add_image_size( 'thumbnails-1080x608', 1080, 608, true ); //(cropped)
-	add_image_size( 'image-thumb-300x200', 300, 200, true ); //(cropped)
-    add_image_size( 'image-thumb-300x250', 300, 200, true ); //(cropped)
+	add_image_size( 'thumbnails-660x440', 660, 440, true ); //(cropped)
+    add_image_size( 'thumbnails-480x320', 480, 320, true ); //(cropped)
 }
 
 //Gets the  number of Post Views to be used later.
