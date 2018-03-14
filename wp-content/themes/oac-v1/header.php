@@ -1,3 +1,4 @@
+<?php include (TEMPLATEPATH . '/utils.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -65,16 +66,19 @@
                                         <a href="<?=URL_SITE?>">Capa</a>
                                     </li>
                                     <li class="m-item-editoria">
+                                        <a href="<?=URL_SITE?>ultimas-noticias">Últimas notícias</a>
+                                    </li>
+                                    <li class="m-item-editoria">
+                                        <a href="<?=URL_SITE?>cotidiano">Cotidiano</a>
+                                    </li>
+                                    <li class="m-item-editoria">
+                                        <a href="<?=URL_SITE?>evangelicas">Evangélicas</a>
+                                    </li>
+                                    <li class="m-item-editoria">
                                         <a href="<?=URL_SITE?>politica">Política</a>
                                     </li>
                                     <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>policia">Polícia</a>
-                                    </li>
-                                    <li class="m-item-editoria">
                                         <a href="<?=URL_SITE?>videos">Vídeos</a>
-                                    </li>
-                                    <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>concursos">Concursos</a>
                                     </li>
                                     <li class="m-item-editoria m-ico-dropdown">
                                         <a id="sub" href="javascript:;">Baixo Acre</a>
