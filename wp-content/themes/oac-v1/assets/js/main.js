@@ -66,6 +66,27 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.compartilhar li a').on('click',function(event){
+        var where = $(this).data('where') == undefined ? $(this).attr('title') : $(this).data('where');
+        var title = $(this).data('title');
+        var url = $(this).data('url');
+        switch(where){
+            case 'facebook':
+                window.open('http://www.facebook.com/sharer.php?u='+url+'&t='+title, 'Facebook', 'width=626,height=436');
+            break;
+            case 'twitter':
+                window.open('http://twitter.com/share?text='+title+'&url='+url, 'Twitter', 'width=626,height=436');
+            break;
+            case 'google':
+                window.open('https://plus.google.com/share?url='+url+'&title='+title, 'Google', 'width=626,height=436');
+            break;
+            case 'whatsapp':
+                window.open('https://plus.google.com/share?url='+url+'&title='+title, 'Google', 'width=626,height=436');
+            break;
+        }
+        return false;
+    });
+
     //https://stackoverflow.com/questions/21447947/jquery-fixing-a-side-bar-while-scrolling-until-bottom
 
     //http://michaelsoriano.com/embed-videos-with-flowplayer/

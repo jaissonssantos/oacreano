@@ -1,7 +1,4 @@
-<?php get_header(); ?>
-    
-
-    https://stackoverflow.com/questions/9472602/wordpress-popular-posts-without-using-plugins
+<?php get_header(); ?> 
 
     <div class="row">
         <div class="col-sm-12">
@@ -19,9 +16,12 @@
     <div class="row">
         <div class="col-sm-12">
             <?php if (have_posts()): while (have_posts()) : the_post();?>
-            <?php //$url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>
-            <?php //if(function_exists('bac_PostViews')) { bac_PostViews(get_the_ID()); }?>
-            <?php //$idpost = get_the_ID(); ?>
+            <?php $url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>
+            <?php 
+                if(function_exists('bac_PostViews')) { 
+                    bac_PostViews(get_the_ID()); 
+                }
+            ?>
             <article class="oac-article">
 
                 <div class="header">
@@ -41,27 +41,41 @@
                         <div class="compartilhar">
                             <ul>
                                 <li>
-                                    <a href="#" title="Facebook">
+                                    <a href="javascript:;" 
+                                        title="facebook" 
+                                        data-title="<?=the_title()?>"
+                                        data-url="<?=$url?>">
                                         <i class="fab fa-facebook-square facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Enviar por whatsapp">
+                                    <a href="javascript:;" 
+                                        title="Enviar por whatsapp"
+                                        data-where="whatsapp"
+                                        data-title="<?=the_title()?>"
+                                        data-url="<?=$url?>">
                                         <i class="fab fa-whatsapp whats"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Twitter">
+                                    <a href="javascript:;" 
+                                        title="twitter" 
+                                        data-title="<?=the_title()?>"
+                                        data-url="<?=$url?>">
                                         <i class="fab fa-twitter twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Google + ">
+                                    <a href="javascript:;" 
+                                        title="google +"
+                                        data-where="google"
+                                        data-title="<?=the_title()?>"
+                                        data-url="<?=$url?>">
                                         <i class="fab fa-google-plus-g gplus"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Enviar por e-mail">
+                                    <a href="mailto:?subject=<?=the_title()?>&BODY=Eu achei este artigo interessante e pensei em compartilhá-lo com você. Confira: <?=$url?>">
                                         <i class="fas fa-envelope email"></i>
                                     </a>
                                 </li>
