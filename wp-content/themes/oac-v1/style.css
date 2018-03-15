@@ -783,6 +783,22 @@ a, a:link, a:hover {
     background: linear-gradient(to top,rgba(0,0,0,.7)0,rgba(0,0,0,.5)70%,transparent 100%);
 }
 
+.oac-video .legenda{
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    transition: border-color .25s ease-out;
+    top: 0;
+    font-size: x-small;
+}
+
+.oac-video .legenda h1{
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0,0,0,.8);
+    font-size: 1.4em;
+}
+
 .oac-video .titulo{
 	position: absolute;
     padding: 20px;

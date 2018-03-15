@@ -153,6 +153,15 @@
 				            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="oac-video oac-video-esquerdo">
+							
+							<?php 
+		                        $key_video = "video";
+		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
+		                        if(isset($cp_legenda) && $cp_legenda >= '') :
+		                        	
+		                        endif;
+		                    ?>
+
 							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
 								<div class="play"></div>
 								<div class="sombra"></div>
@@ -161,6 +170,13 @@
 									<figure style="background-image: url('<?=$thumbnail[0]?>');"></figure>
 								<?php endif; ?>
 								<div class="titulo">
+									<?php 
+				                        $key_legenda = "legenda";
+				                        $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+				                        if(isset($cp_legenda) && $cp_legenda >= '') :
+				                    ?>
+									<h3 class="legenda"><span><?=$cp_legenda?></span></h3>
+									<?php endif; ?>
 									<h1><?=the_title()?></h1>
 								</div>
 							</a>
