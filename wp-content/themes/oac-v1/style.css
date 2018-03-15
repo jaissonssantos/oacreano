@@ -555,8 +555,8 @@ a, a:link, a:hover {
     color: #fff;
     transition: border-color .25s ease-out;
     font-size: xx-small;
-    bottom: 0;
-    left: 0;
+    bottom: -2px;
+    left: -2px;
     position: absolute;
     margin: 0;
 }
@@ -991,9 +991,8 @@ a, a:link, a:hover {
 }
 
 .oac-mais-lidas ol li .chamada h1{
-	font: 400 1em/1em "Source Sans Pro",sans-serif;
+	font: 400 0.8365em/1.111em "Source Sans Pro",sans-serif;
     color: #306232;
-    height: 35px;
     overflow: hidden;
 }
 
@@ -1251,6 +1250,11 @@ footer .copyright{
 	width: 100%;
 }
 
+.oac-article img.alignnone{
+    width: 100%;
+    height: auto;
+}
+
 .oac-article{
 	margin-bottom: 60px;
 }
@@ -1263,6 +1267,37 @@ footer .copyright{
     margin-bottom: 12px;
     text-align: justify;
 }
+
+.oac-article .article-text ul li{
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 25px;
+    color: #444;
+    font-family: 'Raleway' ,sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.oac-article .article-text h2{
+    font: 600 27px/100% "Raleway",sans-serif;
+    letter-spacing: 0.65px;
+    margin-top: 1rem;
+    line-height: 1.75rem;
+}
+
+.oac-article .article-text h3{
+    font: 600 24px/100% "Raleway",sans-serif;
+    letter-spacing: 0.65px;
+    margin-top: 1rem;
+    line-height: 1.75rem;
+} 
+
+.oac-article .article-text h4{
+    font: 600 18px/100% "Raleway",sans-serif;
+    letter-spacing: 0.65px;
+    margin-top: 1rem;
+    line-height: 1.75rem;
+} 
 
 .oac-article .article-public{
 	position: relative;

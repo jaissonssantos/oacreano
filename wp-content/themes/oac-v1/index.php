@@ -664,135 +664,91 @@
 					<a href="<?=URL_SITE?>evangelicas">Evangélicas</a>
 					<a href="<?=URL_SITE?>cidades">Cidades</a>
 				</div>
+				<?php
+                    $args = array(
+                            'post_type'     => 'post',
+                            'post_status'   => 'publish',
+                            'date_query'    => array(
+                                'column'    => 'post_date',
+                                'after'     => '- 2 days'
+                            ),
+                            'showposts'     => 6,
+                            'meta_key'      => 'post_views_count',
+                            'cat'           => '-2,-25,-29',
+                            'orderby'       => 'meta_value_num' 
+                    );
+                    $mostPosts = new wp_query($args);
+                    while($mostPosts->have_posts()) : $mostPosts->the_post();
+                ?>
 				<div class="bloco-container-5">
 					<article class="chamada">
-						<a href="artigo.html">
+						<a href="<?=the_permalink()?>" title="<?=the_title()?>">
 							<div class="picture">
-								<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+								<?php if(has_post_thumbnail()) : ?>
+                                    <?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-480x320'); ?>
+                                    <figure style="background-image: url('<?=$thumbnail[0]?>');"></figure>
+                                <?php endif; ?>
 							</div>
 							<section>
-								<h3><span>Apreensão</span></h3>
-								<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+								<?php 
+                                    $key_legenda = "legenda";
+                                    $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+                                    if(isset($cp_legenda) && $cp_legenda >= '') :
+                                ?>
+								<h3><span><?=$cp_legenda?></span></h3>
+								<?php endif; ?>
+								<h1><span><?=the_title()?></span></h1>
 							</section>
 						</a>
 					</article>
 				</div>
-				<div class="bloco-container-5">
-					<article class="chamada">
-						<a href="artigo.html">
-							<div class="picture">
-								<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-							</div>
-							<section>
-								<h3><span>Apreensão</span></h3>
-								<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-							</section>
-						</a>
-					</article>
-				</div>
-				<div class="bloco-container-5">
-					<article class="chamada">
-						<a href="artigo.html">
-							<div class="picture">
-								<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-							</div>
-							<section>
-								<h3><span>Apreensão</span></h3>
-								<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-							</section>
-						</a>
-					</article>
-				</div>
-				<div class="bloco-container-5">
-					<article class="chamada">
-						<a href="artigo.html">
-							<div class="picture">
-								<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-							</div>
-							<section>
-								<h3><span>Apreensão</span></h3>
-								<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-							</section>
-						</a>
-					</article>
-				</div>
-				<div class="bloco-container-5">
-					<article class="chamada">
-						<a href="artigo.html">
-							<div class="picture">
-								<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-							</div>
-							<section>
-								<h3><span>Apreensão</span></h3>
-								<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-							</section>
-						</a>
-					</article>
-				</div>
-				<div class="bloco-container-5">
-					<article class="chamada">
-						<a href="artigo.html">
-							<div class="picture">
-								<figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-							</div>
-							<section>
-								<h3><span>Apreensão</span></h3>
-								<h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-							</section>
-						</a>
-					</article>
-				</div>
+				<?php 
+                    endwhile; 
+                    wp_reset_query(); 
+                ?>
 			</div>
 		</div>
 		<div class="col-sm-4">
 			<div class="oac-mais-lidas">
 				<h2 class="titulo-box"><span>mais lidas</span></h2>
 				<ol>
+					<?php
+                        $args = array(
+                                'post_type'     => 'post',
+                                'post_status'   => 'publish',
+                                'date_query'    => array(
+                                    'column'    => 'post_date',
+                                    'after'     => '- 30 days'
+                                ),
+                                'showposts'     => 5,
+                                'meta_key'      => 'post_views_count',
+                                'cat'           => '-2,-25,-29',
+                                'orderby'       => 'meta_value_num' 
+                        );
+                        $mostPosts = new wp_query($args);
+                        $i = 1;
+                        while($mostPosts->have_posts()) : $mostPosts->the_post();
+                    ?>
 					<li>
-						<span>1</span>
+						<span><?=$i?></span>
 						<div class="chamada">
-							<a href="#">
-								<span>Apreensão</span>
-								<h1>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</h1>
+							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+								<?php 
+                                    $key_legenda = "legenda";
+                                    $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+                                    if(isset($cp_legenda) && $cp_legenda >= '') :
+                                ?>
+								<span><?=$cp_legenda?></span>
+                                <?php endif; ?>
+								<h1><?=the_title()?></h1>
 							</a>
 						</div>
 					</li>
-					<li>
-						<span>2</span>
-						<div class="chamada">
-							<a href="#">
-								<span>Apreensão</span>
-								<h1>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</h1>
-							</a>
-						</div>
-					</li>
-					<li>
-						<span>3</span>
-						<div class="chamada">
-							<a href="#">
-								<span>Apreensão</span>
-								<h1>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</h1>
-							</a>
-						</div>
-					</li>
-					<li>
-						<span>4</span>
-						<div class="chamada">
-							<a href="#">
-								<span>Apreensão</span>
-								<h1>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</h1>
-							</a>
-						</div>
-					</li>
-					<li>
-						<span>5</span>
-						<div class="chamada">
-							<a href="#">
-								<span>Apreensão</span>
-								<h1>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</h1>
-							</a>
-						</div>
-					</li>
+					<?php 
+						$i++;
+                        endwhile; 
+                        wp_reset_query(); 
+                    ?>
 				</ol>
 			</div>
 			<div class="oac-publi-retangulo-medio mt-2">

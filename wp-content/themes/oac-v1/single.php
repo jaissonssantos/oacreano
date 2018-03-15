@@ -21,6 +21,7 @@
                 if(function_exists('bac_PostViews')) { 
                     bac_PostViews(get_the_ID()); 
                 }
+                $id_post = get_the_ID();
             ?>
             <article class="oac-article">
 
@@ -123,27 +124,41 @@
                 <div class="compartilhar-footer">
                     <ul>
                         <li>
-                            <a href="#" title="Facebook">
+                            <a href="javascript:;" 
+                                title="facebook" 
+                                data-title="<?=the_title()?>"
+                                data-url="<?=$url?>">
                                 <i class="fab fa-facebook-square facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" title="Enviar por whatsapp">
+                            <a href="javascript:;" 
+                                title="Enviar por whatsapp"
+                                data-where="whatsapp"
+                                data-title="<?=the_title()?>"
+                                data-url="<?=$url?>">
                                 <i class="fab fa-whatsapp whats"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" title="Twitter">
+                            <a href="javascript:;" 
+                                title="twitter" 
+                                data-title="<?=the_title()?>"
+                                data-url="<?=$url?>">
                                 <i class="fab fa-twitter twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" title="Google + ">
+                            <a href="javascript:;" 
+                                title="google +"
+                                data-where="google"
+                                data-title="<?=the_title()?>"
+                                data-url="<?=$url?>">
                                 <i class="fab fa-google-plus-g gplus"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" title="Enviar por e-mail">
+                            <a href="mailto:?subject=<?=the_title()?>&BODY=Eu achei este artigo interessante e pensei em compartilhá-lo com você. Confira: <?=$url?>">
                                 <i class="fas fa-envelope email"></i>
                             </a>
                         </li>
@@ -180,96 +195,51 @@
 
             <div class="container">
                 <div class="row">
+                    <?php
+                        $args = array(
+                                'post_type'     => 'post',
+                                'post_status'   => 'publish',
+                                'date_query'    => array(
+                                    'column'    => 'post_date',
+                                    'after'     => '- 7 days'
+                                ),
+                                'showposts'     => 6,
+                                'meta_key'      => 'post_views_count',
+                                'cat'           => '-2,-25,-29',
+                                'orderby'       => 'meta_value_num',
+                                'post__not_in'  => array($id_post) 
+                        );
+                        $mostPosts = new wp_query($args);
+                        while($mostPosts->have_posts()) : $mostPosts->the_post();
+                    ?>
                     <div class="col-sm-4">
                         <div class="bloco-container-6">
                             <article class="chamada">
-                                <a href="artigo/">
+                                <a href="<?=the_permalink()?>" title="<?=the_title()?>">
                                     <div class="picture">
-                                        <figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
+                                        <?php if(has_post_thumbnail()) : ?>
+                                            <?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-480x320'); ?>
+                                            <figure style="background-image: url('<?=$thumbnail[0]?>');"></figure>
+                                        <?php endif; ?>
                                     </div>
                                     <section>
-                                        <h3><span>Apreensão</span></h3>
-                                        <h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
+                                        <?php 
+                                            $key_legenda = "legenda";
+                                            $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+                                            if(isset($cp_legenda) && $cp_legenda >= '') :
+                                        ?>
+                                        <h3><span><?=$cp_legenda?></span></h3>
+                                        <?php endif; ?>
+                                        <h1><span><?=the_title()?></span></h1>
                                     </section>
                                 </a>
                             </article>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="bloco-container-6">
-                            <article class="chamada">
-                                <a href="artigo/">
-                                    <div class="picture">
-                                        <figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-                                    </div>
-                                    <section>
-                                        <h3><span>Apreensão</span></h3>
-                                        <h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-                                    </section>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="bloco-container-6">
-                            <article class="chamada">
-                                <a href="artigo/">
-                                    <div class="picture">
-                                        <figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-                                    </div>
-                                    <section>
-                                        <h3><span>Apreensão</span></h3>
-                                        <h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-                                    </section>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="bloco-container-6">
-                            <article class="chamada">
-                                <a href="artigo/">
-                                    <div class="picture">
-                                        <figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-                                    </div>
-                                    <section>
-                                        <h3><span>Apreensão</span></h3>
-                                        <h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-                                    </section>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="bloco-container-6">
-                            <article class="chamada">
-                                <a href="artigo/">
-                                    <div class="picture">
-                                        <figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-                                    </div>
-                                    <section>
-                                        <h3><span>Apreensão</span></h3>
-                                        <h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-                                    </section>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="bloco-container-6">
-                            <article class="chamada">
-                                <a href="artigo/">
-                                    <div class="picture">
-                                        <figure style="background-image: url('assets/images/destaque06.jpg');"></figure>
-                                    </div>
-                                    <section>
-                                        <h3><span>Apreensão</span></h3>
-                                        <h1><span>Mais de 7 quilos de cocaína são apreendidos escondidos dentro de carro do AC em cegonha a caminho de GO</span></h1>
-                                    </section>
-                                </a>
-                            </article>
-                        </div>
-                    </div>
+                    <?php 
+                        endwhile; 
+                        wp_reset_query(); 
+                    ?>
                 </div><!--end .row-->
             </div><!--end .container-->
 

@@ -81,7 +81,7 @@ $(document).ready(function(){
                 window.open('https://plus.google.com/share?url='+url+'&title='+title, 'Google', 'width=626,height=436');
             break;
             case 'whatsapp':
-                window.open('https://plus.google.com/share?url='+url+'&title='+title, 'Google', 'width=626,height=436');
+                window.open('https://api.whatsapp.com/send?text='+title+'... Veja mais no link: ' + url, 'Whatsapp', 'width=626,height=436');
             break;
         }
         return false;
