@@ -26,7 +26,6 @@
                                 <li>
                                     <article class="chamada">
                                         <a title="<?=the_title()?>" href="<?=the_permalink()?>">
-                                            <!-- <div class="data-artigo"><p><?=the_time('d M')?><br><?=the_time('Y')?></p></div><br/> -->
                                             <div class="imagem"> 
                                                <?php if (has_post_thumbnail()) : ?>
                                                 <?php the_post_thumbnail('thumbnails-480x320'); ?>
