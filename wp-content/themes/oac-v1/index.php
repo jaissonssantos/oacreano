@@ -13,10 +13,10 @@
 		</div>
 	</div>
 
-	<div class="row"><!-- categoria(manchete) -->
+	<div class="row"><!-- categoria(últimas notícias) -->
 		<div class="col-sm-6">
 			<?php 
-	            $categoria = get_cat_id('manchete');
+	            $categoria = get_cat_id('últimas notícias');
 	            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
             <?php if(have_posts()): while (have_posts()) : the_post();?>
 			<article class="oac-destaque oac-destaque-esquerdo">
@@ -45,7 +45,7 @@
 		</div>
 		<div class="col-sm-6">
 			<?php 
-	            $categoria = get_cat_id('manchete');
+	            $categoria = get_cat_id('últimas notícias');
 	            query_posts('showposts=1&offset=1&order=DESC&cat='.$categoria);?>
             <?php if(have_posts()): while (have_posts()) : the_post();?>
 			<article class="oac-destaque oac-destaque-direito">
@@ -74,7 +74,7 @@
             <?php endif;?>
 	
 			<?php 
-	            $categoria = get_cat_id('manchete');
+	            $categoria = get_cat_id('últimas notícias');
 	            query_posts('showposts=1&offset=2&order=DESC&cat='.$categoria);?>
             <?php if(have_posts()): while (have_posts()) : the_post();?>
 			<article class="oac-destaque oac-destaque-direito">
@@ -147,22 +147,24 @@
 		<div class="body-video">
 			<div class="container">
 				<div class="row">
+
 					<div class="col-sm-7">
+						<iframe id="frame_video" src="" frameborder="0" class="hidden-xs-up" allowfullscreen></iframe>
 						<?php 
 				            $categoria = get_cat_id('vídeos');
 				            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
-						<article class="oac-video oac-video-esquerdo">
+						<article class="oac-video oac-video-esquerdo" id="palco_video">
 							
 							<?php 
 		                        $key_video = "video";
 		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
-		                        if(isset($cp_legenda) && $cp_legenda >= '') :
-		                        	
-		                        endif;
+		                        if(isset($cp_video) && $cp_video >= '') :
 		                    ?>
-
-							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+								<a href="javascript:;" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php else: ?>
+								<a href="<?=the_permalink()?>" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php endif; ?>
 								<div class="play"></div>
 								<div class="sombra"></div>
 								<?php if(has_post_thumbnail()) : ?>
@@ -191,7 +193,15 @@
 				            query_posts('showposts=1&offset=1&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="oac-video-direito">
-							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+							<?php 
+		                        $key_video = "video";
+		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
+		                        if(isset($cp_video) && $cp_video >= '') :
+		                    ?>
+								<a href="javascript:;" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php else: ?>
+								<a href="<?=the_permalink()?>" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php endif; ?>
 								<div class="picture">
 									<div class="play"></div>
 									<?php if(has_post_thumbnail()) : ?>
@@ -219,7 +229,15 @@
 				            query_posts('showposts=1&offset=2&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="oac-video-direito">
-							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+							<?php 
+		                        $key_video = "video";
+		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
+		                        if(isset($cp_video) && $cp_video >= '') :
+		                    ?>
+								<a href="javascript:;" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php else: ?>
+								<a href="<?=the_permalink()?>" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php endif; ?>
 								<div class="picture">
 									<div class="play"></div>
 									<?php if(has_post_thumbnail()) : ?>
@@ -247,7 +265,15 @@
 				            query_posts('showposts=1&offset=3&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="oac-video-direito">
-							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+							<?php 
+		                        $key_video = "video";
+		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
+		                        if(isset($cp_video) && $cp_video >= '') :
+		                    ?>
+								<a href="javascript:;" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php else: ?>
+								<a href="<?=the_permalink()?>" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php endif; ?>
 								<div class="picture">
 									<div class="play"></div>
 									<?php if(has_post_thumbnail()) : ?>
@@ -275,7 +301,15 @@
 				            query_posts('showposts=1&offset=4&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="oac-video-direito">
-							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+							<?php 
+		                        $key_video = "video";
+		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
+		                        if(isset($cp_video) && $cp_video >= '') :
+		                    ?>
+								<a href="javascript:;" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php else: ?>
+								<a href="<?=the_permalink()?>" title="<?=the_title()?>" data-url="<?=$cp_video?>">
+							<?php endif; ?>
 								<div class="picture">
 									<div class="play"></div>
 									<?php if(has_post_thumbnail()) : ?>

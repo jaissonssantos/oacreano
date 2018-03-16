@@ -722,6 +722,11 @@ a, a:link, a:hover {
     z-index: 1;
 }
 
+.body-video iframe{
+    width: 100%;
+    height: 420px;
+}
+
 .oac-video{
     overflow: hidden;
     border-radius: 4px;
@@ -1272,11 +1277,12 @@ footer .copyright{
     height: auto;
 }
 
-.oac-article{
+.oac-article, .oac-page{
 	margin-bottom: 60px;
 }
 
-.oac-article .article-text p {
+.oac-article .article-text p,
+.oac-page .page-text p{
     color: #444;
     font-family: 'Raleway' ,sans-serif;
     font-size: 18px;
@@ -1285,7 +1291,8 @@ footer .copyright{
     text-align: justify;
 }
 
-.oac-article .article-text ul li{
+.oac-article .article-text ul li, 
+.oac-page .page-text ul li{
     position: relative;
     margin-bottom: 16px;
     padding-left: 25px;
@@ -1295,21 +1302,24 @@ footer .copyright{
     line-height: 30px;
 }
 
-.oac-article .article-text h2{
+.oac-article .article-text h2, 
+.oac-page .page-text h2{
     font: 600 27px/100% "Raleway",sans-serif;
     letter-spacing: 0.65px;
     margin-top: 1rem;
     line-height: 1.75rem;
 }
 
-.oac-article .article-text h3{
+.oac-article .article-text h3, 
+.oac-page .page-text h3{
     font: 600 24px/100% "Raleway",sans-serif;
     letter-spacing: 0.65px;
     margin-top: 1rem;
     line-height: 1.75rem;
 } 
 
-.oac-article .article-text h4{
+.oac-article .article-text h4, 
+.oac-page .page-text h4{
     font: 600 18px/100% "Raleway",sans-serif;
     letter-spacing: 0.65px;
     margin-top: 1rem;
@@ -1342,6 +1352,89 @@ footer .copyright{
 .oac-article-mais-lidas .header a span{
 	font-weight: 700;
 	margin-left: 10px;
+}
+
+.oac-page .header{
+    border-bottom: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 40px;
+}
+
+.oac-page .header h1{
+    clear: both;
+    float: none;
+    color: #306232;
+    font: 400 36px/120% "Raleway", serif;
+    margin: 30px auto 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.oac-page .header h2{
+    color: #adadad;
+    font-family: "Raleway" ,sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0 auto 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.oac-cat .header{
+    border-bottom: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 40px;
+}
+
+.oac-cat .header h1{
+    clear: both;
+    float: none;
+    color: #306232;
+    font: 400 36px/120% "Raleway", serif;
+    margin: 30px auto 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.oac-cat .itens{margin: 20px 0 60px; padding: 0; position: relative;width: 100%;}
+.oac-cat .itens li:first-child{border: none;}
+.oac-cat .itens li{border-top: 1px solid #e6e6e6;overflow: hidden;padding-bottom: 12px;padding-top: 12px;margin-bottom: 10px;}
+.oac-cat .itens li a {display: block;text-decoration: none; color: #000;}
+.oac-cat .itens li a .data{border-right: 1px solid #e6e6e6;float: left; height: 220px; margin-right: 25px;text-align: center;width: 77px;}
+.oac-cat .itens li a .data p{font-size: 13px;top: 50%; margin-top: -15px; position: relative; text-transform: uppercase;}
+.oac-cat .itens li a .imagem{float: left;margin-right: 12px;overflow: hidden;position: relative;top: 5px; display: block;}
+.oac-cat .itens li a .imagem img{width: 275px; height: auto;}
+.oac-cat .itens li .legenda{
+    font: 400 14px/120% "Raleway", serif;
+    color: #306232;
+    letter-spacing: -0.02em;
+    line-height: 14px;
+    padding: 6px 0 0;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.oac-cat .itens li h1{
+    font: bold 1.2em/120% "Raleway", serif;
+    letter-spacing: -0.02em;
+    padding: 6px 0;
+    color: #306232;
+}
+.oac-cat .itens li .resumo{
+    font: 400 13px/120% "Raleway", serif;
+    color: #666;
+}
+
+.oac-cat .itens li i{
+    font-size: 0.9em;
+    color: #666;
+    margin-right: 10px;
+}
+
+.oac-cat .itens li span{
+    font: 400 11px/120% "Raleway", serif;
+    color: #666;
 }
 
 /* Rules for sizing the icon. */

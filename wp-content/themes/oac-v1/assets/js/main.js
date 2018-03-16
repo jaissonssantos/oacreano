@@ -87,6 +87,14 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.oac-video a, .oac-video-direito a').on('click',function(event){
+        var url = $(this).data('url');
+        $('#frame_video').removeClass('hidden-xs-up');
+        $('#palco_video').addClass('hidden-xs-up');
+        $('#frame_video').attr('src', url+'?autoplay=1&rel=0');
+        return false;
+    });
+
     
 
     //https://stackoverflow.com/questions/21447947/jquery-fixing-a-side-bar-while-scrolling-until-bottom

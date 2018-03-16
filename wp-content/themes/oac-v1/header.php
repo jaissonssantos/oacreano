@@ -66,65 +66,65 @@
                                         <a href="<?=URL_SITE?>">Capa</a>
                                     </li>
                                     <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>ultimas-noticias">Últimas notícias</a>
+                                        <a href="<?=URL_SITE?>c/ultimas">Últimas notícias</a>
                                     </li>
                                     <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>cotidiano">Cotidiano</a>
+                                        <a href="<?=URL_SITE?>c/cotidiano">Cotidiano</a>
                                     </li>
                                     <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>evangelicas">Evangélicas</a>
+                                        <a href="<?=URL_SITE?>c/evangelicas">Evangélicas</a>
                                     </li>
                                     <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>politica">Política</a>
+                                        <a href="<?=URL_SITE?>c/politica">Política</a>
                                     </li>
                                     <li class="m-item-editoria">
-                                        <a href="<?=URL_SITE?>videos">Vídeos</a>
+                                        <a href="<?=URL_SITE?>c/videos">Vídeos</a>
                                     </li>
                                     <li class="m-item-editoria m-ico-dropdown">
                                         <a id="sub" href="javascript:;">Baixo Acre</a>
                                         <ul class="sub-dropdown sub-dropdown-open">
-                                            <li><a href="<?=URL_SITE?>acrelandia">Acrelândia</a></li>
-                                            <li><a href="<?=URL_SITE?>bujari">Bujari</a></li>
-                                            <li><a href="<?=URL_SITE?>capixaba">Capixaba</a></li>
-                                            <li><a href="<?=URL_SITE?>placido-de-castro">Plácido de Castro</a></li>
-                                            <li><a href="<?=URL_SITE?>porto-acre">Porto Acre</a></li>
-                                            <li><a href="<?=URL_SITE?>rio-branco">Rio Branco</a></li>
-                                            <li><a href="<?=URL_SITE?>senador-guiomard">Senador Guiomard</a></li>
+                                            <li><a href="<?=URL_SITE?>c/acrelandia">Acrelândia</a></li>
+                                            <li><a href="<?=URL_SITE?>c/bujari">Bujari</a></li>
+                                            <li><a href="<?=URL_SITE?>c/capixaba">Capixaba</a></li>
+                                            <li><a href="<?=URL_SITE?>c/placido-de-castro">Plácido de Castro</a></li>
+                                            <li><a href="<?=URL_SITE?>c/porto-acre">Porto Acre</a></li>
+                                            <li><a href="<?=URL_SITE?>c/rio-branco">Rio Branco</a></li>
+                                            <li><a href="<?=URL_SITE?>c/senador-guiomard">Senador Guiomard</a></li>
                                         </ul>
                                     </li>
                                     <li class="m-item-editoria m-ico-dropdown">
                                         <a id="sub" href="javascript:;">Alto Acre</a>
                                         <ul class="sub-dropdown">
-                                            <li><a href="<?=URL_SITE?>assis-brasil">Assis Brasil</a></li>
-                                            <li><a href="<?=URL_SITE?>brasileia">Brasiléia</a></li>
-                                            <li><a href="<?=URL_SITE?>epitaciolandia">Epitaciolândia</a></li>
-                                            <li><a href="<?=URL_SITE?>xapuri">Xapuri</a></li>
+                                            <li><a href="<?=URL_SITE?>c/assis-brasil">Assis Brasil</a></li>
+                                            <li><a href="<?=URL_SITE?>c/brasileia">Brasiléia</a></li>
+                                            <li><a href="<?=URL_SITE?>c/epitaciolandia">Epitaciolândia</a></li>
+                                            <li><a href="<?=URL_SITE?>c/xapuri">Xapuri</a></li>
                                         </ul>
                                     </li>
                                     <li class="m-item-editoria m-ico-dropdown">
                                         <a id="sub" href="javascript:;">Purus</a>
                                         <ul class="sub-dropdown">
-                                            <li><a href="<?=URL_SITE?>manoel-urbano">Manoel Urbano</a></li>
-                                            <li><a href="<?=URL_SITE?>santa-rosa-do-purus">Santa Rosa do Purus</a></li>
-                                            <li><a href="<?=URL_SITE?>sena-madureira">Sena Madureira</a></li>
+                                            <li><a href="<?=URL_SITE?>c/manoel-urbano">Manoel Urbano</a></li>
+                                            <li><a href="<?=URL_SITE?>c/santa-rosa-do-purus">Santa Rosa do Purus</a></li>
+                                            <li><a href="<?=URL_SITE?>c/sena-madureira">Sena Madureira</a></li>
                                         </ul>
                                     </li>
                                     <li class="m-item-editoria m-ico-dropdown">
                                         <a id="sub" href="javascript:;">Tarauacá/Envira</a>
                                         <ul class="sub-dropdown">
-                                            <li><a href="<?=URL_SITE?>tarauaca">Tarauacá</a></li>
-                                            <li><a href="<?=URL_SITE?>feijo">Feijó</a></li>
-                                            <li><a href="<?=URL_SITE?>jordao">Jordão</a></li>
+                                            <li><a href="<?=URL_SITE?>c/tarauaca">Tarauacá</a></li>
+                                            <li><a href="<?=URL_SITE?>c/feijo">Feijó</a></li>
+                                            <li><a href="<?=URL_SITE?>c/jordao">Jordão</a></li>
                                         </ul>
                                     </li>
                                     <li class="m-item-editoria m-ico-dropdown">
                                         <a id="sub" href="javascript:;">Juruá</a>
                                         <ul class="sub-dropdown">
-                                            <li><a href="<?=URL_SITE?>cruzeiro-do-sul">Cruzeiro do sul</a></li>
-                                            <li><a href="<?=URL_SITE?>mancio-lima">Mâncio lima</a></li>
-                                            <li><a href="<?=URL_SITE?>rodrigues-alves">Rodrigues Alves</a></li>
-                                            <li><a href="<?=URL_SITE?>marechal-thaumaturgo">Marechal Thaumaturgo</a></li>
-                                            <li><a href="<?=URL_SITE?>porto-walter">Porto Walter</a></li>
+                                            <li><a href="<?=URL_SITE?>c/cruzeiro-do-sul">Cruzeiro do sul</a></li>
+                                            <li><a href="<?=URL_SITE?>c/mancio-lima">Mâncio lima</a></li>
+                                            <li><a href="<?=URL_SITE?>c/rodrigues-alves">Rodrigues Alves</a></li>
+                                            <li><a href="<?=URL_SITE?>c/marechal-thaumaturgo">Marechal Thaumaturgo</a></li>
+                                            <li><a href="<?=URL_SITE?>c/porto-walter">Porto Walter</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -150,7 +150,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<?=URL_SITE?>">
+                                <a href="<?=URL_SITE?>c/ultimas">
                                     <i class="material-icons md-light">access_time</i>
                                     <span class="mr-titulo">Últimas</span>
                                 </a>
@@ -175,7 +175,7 @@
 
 
     <div class="oac-search-box hidden-xs-up">
-        <form method="get" action="<?=URL_SITE?>/busca">
+        <form method="get" action="<?=URL_SITE?>s=">
             <input type="text" name="s" id="s" value="Busca" 
             onfocus="if (this.value == 'Busca'){ this.value = ''; }" 
             onblur="if (this.value == '') { this.value = 'Busca' }">
