@@ -41,9 +41,20 @@
     <link href="<?=PATH_TEMPLATE?>assets/css/hidden.css" rel="stylesheet">
     <link href="<?=PATH_TEMPLATE?>style.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?=PATH_TEMPLATE?>favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115987227-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115987227-1');
+    </script>
+
+
     <?php $pgh = is_home(); ?>
     <?php wp_head(); ?>
-
 </head>
 <body>
 

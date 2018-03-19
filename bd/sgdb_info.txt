@@ -1,0 +1,6 @@
+BANCO DE DADOS
+	-> oacreano_portal
+USUARIO
+	-> oacreano_portal
+SENHA
+	-> uZw4Ao[rZB)76hG$(uOMuYsX
