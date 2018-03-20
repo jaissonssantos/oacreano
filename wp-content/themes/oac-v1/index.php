@@ -2,7 +2,7 @@
    
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="oac-publi">
+			<div class="oac-publi publi-970x90">
 				<span>Publicidade</span>
 				<div>
 					<a href="/">
@@ -296,41 +296,6 @@
 						<?php endwhile; else:?>
         				<?php endif;?>
 
-						<?php 
-				            $categoria = get_cat_id('vídeos');
-				            query_posts('showposts=1&offset=4&order=DESC&cat='.$categoria);?>
-			            <?php if(have_posts()): while (have_posts()) : the_post();?>
-						<article class="oac-video-direito">
-							<?php 
-		                        $key_video = "video";
-		                        $cp_video  = get_post_meta($post->ID,$key_video,true);
-		                        if(isset($cp_video) && $cp_video >= '') :
-		                    ?>
-								<a href="javascript:;" title="<?=the_title()?>" data-url="<?=$cp_video?>">
-							<?php else: ?>
-								<a href="<?=the_permalink()?>" title="<?=the_title()?>" data-url="<?=$cp_video?>">
-							<?php endif; ?>
-								<div class="picture">
-									<div class="play"></div>
-									<?php if(has_post_thumbnail()) : ?>
-										<?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-660x440'); ?>
-										<figure style="background-image: url('<?=$thumbnail[0]?>');"></figure>
-									<?php endif; ?>
-								</div>
-								<section>
-									<?php 
-				                        $key_legenda = "legenda";
-				                        $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
-				                        if(isset($cp_legenda) && $cp_legenda >= '') :
-				                    ?>
-									<h3><span><?=$cp_legenda?></span></h3>
-									<?php endif; ?>
-									<h1><span><?=the_title()?></span></h1>
-								</section>
-							</a>
-						</article>
-						<?php endwhile; else:?>
-        				<?php endif;?>
 					</div>
 				</div><!--end .row -->
 			</div><!--end .container -->
@@ -339,7 +304,7 @@
 
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="oac-publi">
+			<div class="oac-publi publi-970x90">
 				<span>Publicidade</span>
 				<div>
 					<a href="/">
@@ -569,7 +534,7 @@
 
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="oac-publi mt-2">
+			<div class="oac-publi publi-970x90 mt-2">
 				<span>Publicidade</span>
 				<div>
 					<a href="/">
@@ -720,7 +685,7 @@
                             'post_status'   => 'publish',
                             'date_query'    => array(
                                 'column'    => 'post_date',
-                                'after'     => '- 2 days'
+                                'after'     => '- 15 days'
                             ),
                             'showposts'     => 6,
                             'meta_key'      => 'post_views_count',
