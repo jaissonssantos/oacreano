@@ -27,6 +27,10 @@ a, a:link, a:hover {
     text-align: center;
 }
 
+.oac-ic_mobile{
+    display: none;
+}
+
 .oac-header .header-align-items-center{
 	margin-top: 25px;
 }
@@ -1440,7 +1444,7 @@ footer .copyright{
 }
 
 /* Rules mobile 1024px */
-@media only screen and (min-width: 1024px){
+@media only screen and (max-width: 1024px){
     .publi-970x90{
         overflow-x: hidden;
     }
@@ -1482,17 +1486,154 @@ footer .copyright{
     .bloco-container-6 .chamada .picture{
         width: 100%;
     }
+    .bloco-container-6 .chamada section h3{
+        bottom: 0;
+        left: -2px;
+        top: -2px;
+    }
     .oac-populares .sub-editorias a{
         font-size: 12px;
     }
     .oac-mais-lidas ol li .chamada span{
         text-align: left;
     }
+
 }
 
 /* Rules mobile 728px */
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
 
+}
+
+/* Rules mobile 420px */
+@media only screen and (max-width: 320px){
+    .publi-970x90{
+        overflow-x: hidden;
+    }
+    .publi-970x90 img, .oac-publi-retangulo-medio img, .oac-publi-meia-pagina img{
+        width: 100%;
+    }
+    .oac-ic_full{
+        display: none;
+    }
+    .oac-ic_mobile{
+        display: block;
+        width: 120px;
+        margin-left: -20px;
+    }
+    .oac-header{
+        background: #306232;
+        width: 100%;
+        height: 60px;
+        transition: all 0.4s ease-out;
+        margin-bottom: 20px;
+    }
+    .oac-topo-reduzido .oac-logotipo img:first-child + img{
+        width: 120px;
+        margin-left: -20px;
+        display: block;
+    }   
+    .oac-header .col-sm-4{
+        width: 33.33%
+    }
+    .oac-header .header-align-items-center{
+        margin: 0;
+    }
+    .oac-header .oac-menu{
+        margin-top: 10px;
+    }
+    .oac-header .oac-logotipo{
+        margin-top: 20px;
+    }
+    .oac-header .oac-acesso-rapido{
+        height: 60px;
+    }
+    .oac-header .oac-menu-acesso-rapido li,
+    .oac-header .oac-menu-acesso-rapido li:first-child + li{
+        display: none;
+    }
+    .oac-header .oac-menu-acesso-rapido li:first-child{
+        display: block;
+        margin-right: 0;
+    }
+    .oac-header .oac-menu-acesso-rapido li span{
+        display: none;
+    }
+    .oac-header .m-ver-mais .dropdown{
+        top: 9px;
+    }
+    .m-ver-mais .dropdown{
+        width: 320px;
+        right: -230px;
+        height: auto;
+    }
+    .oac-destaque-esquerdo{
+        height: 260px;
+        margin-bottom: 15px;
+    }
+    .oac-destaque .titulo h1{
+        font-size: 1em;
+    }
+    .bloco-container-1 .chamada .picture{
+        width: 100%;
+    }
+    .bloco-container-1 .chamada section h1{
+        font: bold 0.975em/130% "Raleway", sans-serif;
+    }
+    .bloco-container-1 .chamada section h1 span{
+        padding: 22px 20px 0 20px;
+    }
+    .bloco-container-1 .chamada section h3{
+        position: absolute;
+        top: -1px;
+    }
+    .bloco-container-1 .chamada section h4{
+        font: 0.675em/130% "Raleway", sans-serif;
+    }
+    .bloco-container-2 .chamada .picture{
+        width: 100%;
+        height: 245px;
+    }
+    .bloco-container-2 .chamada section h1{
+        font: bold 0.975em/130% "Raleway", sans-serif;
+    }
+    .bloco-container-2 .chamada section h4{
+        font: 0.675em/130% "Raleway", sans-serif;
+    }
+    .bloco-container-3 .chamada .picture, .bloco-container-4 .chamada .picture, .bloco-container-5 .chamada .picture{
+        width: 100%;
+    }
+    .container-video{
+        height: 840px;
+    }
+    .oac-video-esquerdo{
+        height: 310px;
+        margin: 15px 0;
+    }
+    .oac-video-direito:first-child{
+        margin: 10px 0 30px 0;
+    }
+    .oac-video-direito section h1{
+        font: 500 .575em/130% "Raleway", sans-serif;
+    }
+    .oac-populares .sub-editorias a{
+        font-size: 11px;
+        padding: 10px;
+        background: #CCC;
+        margin-bottom: 5px;
+        margin: 0 0 4px;
+    }
+    .footer-bar h1{
+        font: bold 14px/100% 'Raleway',sans-serif;
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-top: 150px;
+    }
+    footer ul li{
+        display: inline-table;
+    }
 }
 
 /* Rules for sizing the icon. */

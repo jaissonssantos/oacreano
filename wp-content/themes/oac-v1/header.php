@@ -9,7 +9,7 @@
     <meta content="OAcreano - jornalismo acrenao, política e polícia" name="app-title">
     <meta content="oacreano" name="app-author">
     <meta content="oacreano" name="app-name">
-    <meta content="OAcreano - ornalismo acrenao, política e polícia" name="apple-mobile-web-app-title">
+    <meta content="OAcreano - jornalismo acrenao, política e polícia" name="apple-mobile-web-app-title">
     <meta content="OAcreano" name="application-name">
     <meta content="website" property="og:type">
     <meta content="OAcreano" property="og:site_name">
@@ -146,7 +146,8 @@
                 <div class="col-sm-4">
                     <div class="oac-logotipo">
                         <a href="<?=URL_SITE?>">
-                            <img src="<?=PATH_TEMPLATE?>assets/images/ic_oacreano.svg">
+                            <img class="oac-ic_full" src="<?=PATH_TEMPLATE?>assets/images/ic_oacreano.svg">
+                            <img class="oac-ic_mobile" src="<?=PATH_TEMPLATE?>assets/images/ic_oacreano_mobile.svg">
                         </a>
                     </div>
                 </div>
