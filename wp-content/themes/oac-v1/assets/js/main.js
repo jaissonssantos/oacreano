@@ -91,7 +91,7 @@ $(document).ready(function(){
         var url = $(this).data('url');
         $('#frame_video').removeClass('hidden-xs-up');
         $('#palco_video').addClass('hidden-xs-up');
-        $('#frame_video').attr('src', url+'?autoplay=1&rel=0');
+        $('#frame_video').attr('src', 'https://www.youtube.com/embed/'+url+'?autoplay=1&rel=0');
         return false;
     });
 

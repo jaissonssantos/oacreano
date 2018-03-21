@@ -103,14 +103,24 @@
 
                     </div>
 
-                    <?php if(has_post_thumbnail()) : ?>
+                    
                     <div class="imagem">
-                        <picture>
-                            <?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-1080x608'); ?>
-                            <img src="<?=$thumbnail[0]?>">
-                        </picture>
+                        <?php 
+                            $key_video = "video";
+                            $cp_video  = get_post_meta($post->ID,$key_video,true);
+                            if(isset($cp_video) && $cp_video != '') {
+                        ?>
+                            <iframe src="https://www.youtube.com/embed/<?=$cp_video?>" 
+                                width="100%" height="720"></iframe>
+                        <?php }else{ ?>
+                            <?php if(has_post_thumbnail()) { ?>
+                            <picture>
+                                <?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-1080x608'); ?>
+                                <img src="<?=$thumbnail[0]?>">
+                            </picture>
+                            <?php } ?>
+                        <?php } ?>
                     </div>
-                    <?php endif; ?>
                 </div>
 
                 <div class="article-text">
@@ -173,7 +183,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <div class="oac-publi">
+            <div class="oac-publi publi-970x90">
                 <span>Publicidade</span>
                 <div>
                     <a href="/">

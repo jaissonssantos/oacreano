@@ -685,7 +685,7 @@
                             'post_status'   => 'publish',
                             'date_query'    => array(
                                 'column'    => 'post_date',
-                                'after'     => '- 15 days'
+                                'after'     => '- 10 days'
                             ),
                             'showposts'     => 6,
                             'meta_key'      => 'post_views_count',
@@ -733,7 +733,7 @@
                                 'post_status'   => 'publish',
                                 'date_query'    => array(
                                     'column'    => 'post_date',
-                                    'after'     => '- 30 days'
+                                    'after'     => '- 15 days'
                                 ),
                                 'showposts'     => 5,
                                 'meta_key'      => 'post_views_count',
