@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <div class="oac-publi">
+            <div class="oac-publi publi-970x90">
                 <span>Publicidade</span>
                 <div>
                     <a href="/">
@@ -34,9 +34,10 @@
                                             <div class="descricao">
                                                 <div class="legenda">
                                                     <?php 
-                                                        $key_legenda = "legenda"; $cp_autor  = get_post_meta($post->ID,$key_legenda,true);
-                                                        if(isset($key_legenda) && $key_legenda >= ''){
-                                                            echo $key_legenda;
+                                                        $key_legenda = "legenda"; 
+                                                        $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+                                                        if(isset($cp_legenda) && $cp_legenda >= ''){
+                                                            echo $cp_legenda;
                                                         }
                                                     ?> 
                                                 </div>

@@ -1500,13 +1500,8 @@ footer .copyright{
 
 }
 
-/* Rules mobile 728px */
-@media only screen and (max-width: 768px){
-
-}
-
-/* Rules mobile 420px */
-@media only screen and (max-width: 320px){
+/* Rules mobile 767px */
+@media only screen and (max-width : 768px) {
     .publi-970x90{
         overflow-x: hidden;
     }
@@ -1514,6 +1509,113 @@ footer .copyright{
         width: 100%;
     }
     .oac-ic_full{
+        display: block;
+        width: 170px;
+        margin-left: -20px;
+    }
+    .oac-ic_mobile{
+        display: none;
+    }
+    .oac-header{
+        background: #306232;
+        width: 100%;
+        height: 60px;
+        transition: all 0.4s ease-out;
+        margin-bottom: 20px;
+    }
+    .oac-topo-reduzido .oac-logotipo img:first-child{
+        width: 170px;
+        margin-left: -20px;
+        display: block;
+    }  
+    .oac-header .header-align-items-center{
+        margin: 0;
+    }
+    .oac-header .oac-menu{
+        margin-top: 10px;
+    }
+    .oac-header .oac-logotipo{
+        margin-top: 10px;
+    }
+    .oac-header .oac-acesso-rapido{
+        height: 60px;
+    }
+    .oac-header .oac-menu-acesso-rapido li:first-child{
+        display: inline-block;
+        margin-right: 0;
+    }
+    .oac-menu-acesso-rapido li:first-child + li{
+        padding: 22px 0px;
+    }
+    .oac-menu-acesso-rapido li:nth-child(3){
+        margin-left: 0;
+    }
+    .oac-header .oac-menu-acesso-rapido li span{
+        display: none;
+    }
+    .oac-header .m-ver-mais .dropdown{
+        top: 9px;
+    }
+    .m-ver-mais .dropdown{
+        width: 320px;
+        right: -110px;
+        height: auto;
+    }
+    .oac-destaque-esquerdo{
+        height: 350px;
+    }
+    .oac-destaque .titulo h1{
+        font-size: .9em;
+    }
+    .oac-destaque-direito{
+        height: 165px;
+    }
+    .oac-destaque-direito .titulo h1{
+        font-size: .7em;
+    }
+    .bloco-container-1 .chamada .picture{
+        width: 40%;
+        height: 200px;
+    }
+    .bloco-container-1 .chamada section h1{
+        font: bold .9575em/130% "Raleway", sans-serif
+    }
+    .bloco-container-1 .chamada section h4{
+        font: 0.675em/130% "Raleway", sans-serif;
+    }
+    .oac-video-direito section h1{
+        font: 500 .5975em/130% "Raleway", sans-serif;
+    }
+    .bloco-container-2 .chamada .picture{
+        width: 50%;
+    }
+    .bloco-container-4 .chamada .picture{
+        width: 40%;
+    }
+    .bloco-container-5 .chamada .picture{
+        width: 25%;
+    }
+    .footer-bar h1{
+        font: bold 20px/75% 'Raleway',sans-serif;
+    }
+    .footer-bar .icons{
+        margin-left: 205px;
+        margin-top: 10px;
+    }
+    footer{
+        margin-top: 125px;
+    }
+}
+
+/* Rules mobile 320px and 480px */
+@media only screen and (max-width: 480px) {
+    .publi-970x90{
+        overflow-x: hidden;
+    }
+    .publi-970x90 img, .oac-publi-retangulo-medio img, .oac-publi-meia-pagina img{
+        width: 100%;
+    }
+    .oac-ic_full, .oac-topo-reduzido .oac-logotipo img:first-child{
         display: none;
     }
     .oac-ic_mobile{
@@ -1610,6 +1712,9 @@ footer .copyright{
         height: 310px;
         margin: 15px 0;
     }
+    .oac-video .titulo h1{
+        font-size: 0.8em;
+    }
     .oac-video-direito:first-child{
         margin: 10px 0 30px 0;
     }
@@ -1622,6 +1727,38 @@ footer .copyright{
         background: #CCC;
         margin-bottom: 5px;
         margin: 0 0 4px;
+    }
+    .oac-cat .itens{
+        margin: 0 0 6px;
+    }
+    .oac-cat .itens li a .imagem{
+        margin: 0;
+    }
+    .oac-cat .itens li a .imagem img{
+        width: 100%;
+    }
+    .oac-cat .itens li .legenda{
+        display: inline-block;
+        padding: 12px 0 0;
+    }
+    .oac-article .header{
+        margin: 0 auto 20px;
+    }
+    .oac-article .header h1{
+        font: 600 20px/120% "Raleway", serif;
+    }
+    .oac-article .header h2{
+        font-size: 14px;
+    }
+    .oac-article .compartilhar li, .oac-article .compartilhar-footer li{
+        margin-bottom: 10px;
+    }
+    .oac-article .article-text p, .oac-page .page-text p, .oac-article .article-text ul li, .oac-page .page-text ul li{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .oac-article .article-text ul li, .oac-page .page-text ul li{
+        margin-bottom: 6px;
     }
     .footer-bar h1{
         font: bold 14px/100% 'Raleway',sans-serif;

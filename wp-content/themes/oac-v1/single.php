@@ -26,7 +26,7 @@
             <article class="oac-article">
 
                 <div class="header">
-                    <div class="offset-2 col-sm-8">
+                    <div class="offset-sm-2 col-sm-8">
                         <?php 
                             $key_legenda = "legenda";
                             $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
@@ -106,6 +106,11 @@
                     
                     <div class="imagem">
                         <?php 
+                            if(has_post_thumbnail()) { 
+                                $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-1080x608');
+                            }
+                        ?>
+                        <?php 
                             $key_video = "video";
                             $cp_video  = get_post_meta($post->ID,$key_video,true);
                             if(isset($cp_video) && $cp_video != '') {
@@ -113,19 +118,16 @@
                             <iframe src="https://www.youtube.com/embed/<?=$cp_video?>" 
                                 width="100%" height="720"></iframe>
                         <?php }else{ ?>
-                            <?php if(has_post_thumbnail()) { ?>
                             <picture>
-                                <?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-1080x608'); ?>
                                 <img src="<?=$thumbnail[0]?>">
                             </picture>
-                            <?php } ?>
                         <?php } ?>
                     </div>
                 </div>
 
                 <div class="article-text">
                     <div class="row">
-                        <div class="offset-2 col-sm-8">
+                        <div class="offset-sm-2 col-sm-8">
                             <?php the_content();?>
                         </div>
                     </div>
@@ -176,6 +178,13 @@
                 </div>
 
             </article>
+            <?php 
+                if(function_exists('add_meta_tags_facebook')) { 
+                    add_meta_tags_facebook();
+                    add_meta_tags_twitter(); 
+                    add_meta_tags_googleplus(); 
+                }
+            ?>
             <?php endwhile; else:?>
             <?php endif;?>
         </div>

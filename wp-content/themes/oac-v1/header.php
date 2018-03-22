@@ -11,20 +11,7 @@
     <meta content="oacreano" name="app-name">
     <meta content="OAcreano - jornalismo acrenao, política e polícia" name="apple-mobile-web-app-title">
     <meta content="OAcreano" name="application-name">
-    <meta content="website" property="og:type">
-    <meta content="OAcreano" property="og:site_name">
-    <meta content="OAcreano" property="og:title">
-    <meta content="política, cotidiano e vídeos com jornalismo diferente, sem copia e cola. matérias surpreendentes e cobertura completa da região norte." property="og:description">
-    <meta content="http://oacreano.com.br/" property="og:url">
-    <meta content="http://s.oacreano.com.br/assets/images/opengraph_1.jpg" property="og:image">
-    <meta value="summary" name="twitter:card">
-    <meta value="OAcreano" name="twitter:title">
-    <meta value="política, cotidiano e vídeos com jornalismo diferente, sem copia e cola. matérias surpreendentes e cobertura completa da região norte." name="twitter:description">
-    <meta value="http://oacreano.com.br/" name="twitter:url">
-    <meta value="http://s.oacreano.com.br/assets/images/opengraph_1.jpg" name="twitter:image">
-    <meta content="OAcreano" itemprop="gapower:channel_title">
-    <meta content="OAcreano" itemprop="gapower:program_title">
-    <meta name="author" content="">
+    <meta name="author" content="oacreano">
     <meta http-equiv="cache-control"   content="no-cache" />
     <meta http-equiv="pragma" content="no-cache" />
     <link rel="shortcut icon" href="<?=PATH_TEMPLATE?>favicon.ico">

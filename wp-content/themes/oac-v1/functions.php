@@ -17,6 +17,61 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'thumbnails-480x320', 480, 320, true ); //(cropped)
 }
 
+/* Adicionando meta tags ao header */
+function add_meta_tags_facebook() {
+    if (is_single()){
+        $id = get_the_ID();
+        $title = get_the_title($id);
+        $description = get_the_excerpt($id);
+        $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'thumbnails-1080x608');
+        $url = get_permalink($id);
+        $type = substr($thumbnail[0],-3);
+        echo '<meta property="og:title" content="'.$title.'" />';
+        echo '<meta property="og:description" content="'.$description.'" />';
+        echo '<meta name="keywords" content="política, polícia, vídeos, evangélico, cotidiano, oacreano, jornalismo acreano, acreano, notícias do acre, acre, alto acre, baixo acre, purus, juruá, tarauaca envira" />';
+        echo '<meta property="og:url" content="'.$url.'">';
+        echo '<meta property="og:image" content="'.$thumbnail[0].'">';
+        echo '<meta property="og:image:type" content="image/'.$type.'">';
+        echo '<meta property="og:image:width" content="400">';
+        echo '<meta property="og:image:height" content="300">';
+        echo '<meta property="og:type" content="article" />';
+        echo '<meta property="og:site_name" content="OAcreano" />';
+    }
+}
+add_action('wp_head', 'add_meta_tags_facebook');
+
+function add_meta_tags_twitter() {
+    if (is_single()){
+        $id = get_the_ID();
+        $title = get_the_title($id);
+        $description = get_the_excerpt($id);
+        $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'thumbnails-1080x608');
+        $url = get_permalink($id);
+        echo '<meta name="twitter:card" content="summary" />';
+        echo '<meta name="twitter:site" content="@oacreano_official" />';
+        echo '<meta name="twitter:creator" content="@oacreano_official" />';
+        echo '<meta property="twitter:url" content="'.$url.'" />';
+        echo '<meta property="twitter:title" content="'.$title.'" />';
+        echo '<meta property="twitter:description" content="'.$description.'" />';
+        echo '<meta property="image:image" content="'.$thumbnail[0].'" />';
+    }
+}
+add_action('wp_head', 'add_meta_tags_twitter');
+
+function add_meta_tags_googleplus() {
+    if (is_single()){
+        $id = get_the_ID();
+        $title = get_the_title($id);
+        $description = get_the_excerpt($id);
+        $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'thumbnails-1080x608');
+        echo '<meta itemscope itemtype="http://schema.org/article" />';
+        echo '<meta itemprop="headline" content="'.$title.'" />';
+        echo '<meta itemprop="description" content="'.$description.'" />';
+        echo '<meta itemprop="image" content="'.$thumbnail[0].'" />';
+    }
+}
+add_action('wp_head', 'add_meta_tags_googleplus');
+
 function bac_PostViews($post_ID) {
  
     //Set the name of the Posts Custom Field.

@@ -66,7 +66,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('.compartilhar li a').on('click',function(event){
+    $('.compartilhar li a, .compartilhar-footer li a').on('click',function(event){
         var where = $(this).data('where') == undefined ? $(this).attr('title') : $(this).data('where');
         var title = $(this).data('title');
         var url = $(this).data('url');
