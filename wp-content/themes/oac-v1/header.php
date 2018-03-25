@@ -39,6 +39,20 @@
       gtag('config', 'UA-115987227-1');
     </script>
 
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+    </script>
+
+    <script>
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/36847465/01.01.BLOCO', [[728, 90], [970, 90]], 'div-gpt-ad-1522019374350-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+
 
     <?php $pgh = is_home(); ?>
     <?php wp_head(); ?>

@@ -5,9 +5,12 @@
 			<div class="oac-publi publi-970x90">
 				<span>Publicidade</span>
 				<div>
-					<a href="/">
-						<img src="<?=PATH_TEMPLATE?>assets/images/970x90-publi.jpeg">
-					</a>
+					<!-- /36847465/01.01.BLOCO -->
+					<div id='div-gpt-ad-1522019374350-0'>
+					<script>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522019374350-0'); });
+					</script>
+					</div>
 				</div>	
 			</div>
 		</div>
