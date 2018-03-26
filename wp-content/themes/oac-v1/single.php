@@ -200,9 +200,15 @@
             <div class="oac-publi publi-970x90">
                 <span>Publicidade</span>
                 <div>
-                    <a href="/">
-                        <img src="<?=PATH_TEMPLATE?>assets/images/970x90-publi.jpeg">
-                    </a>
+                    <!-- oac_responsivo_grande -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9210129523880937"
+                         data-ad-slot="2386010219"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>  
             </div>
         </div>
@@ -225,7 +231,7 @@
                                 'post_status'   => 'publish',
                                 'date_query'    => array(
                                     'column'    => 'post_date',
-                                    'after'     => '- 15 days'
+                                    'after'     => '- 7 days'
                                 ),
                                 'showposts'     => 6,
                                 'meta_key'      => 'post_views_count',

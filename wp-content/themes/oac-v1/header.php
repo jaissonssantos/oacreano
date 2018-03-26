@@ -49,8 +49,35 @@
 
     <script>
       googletag.cmd.push(function() {
-        googletag.defineSlot('/36847465/01.01.BLOCO', [[728, 90], [970, 90]], 'div-gpt-ad-1522019374350-0').addService(googletag.pubads());
+        googletag.defineSlot('/36847465/01.01.BLOCO', [[728, 90], [970, 90]], 'div-gpt-ad-1522083229326-0').addService(googletag.pubads());
         googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+      });
+    </script>
+
+    <script>
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/36847465/01.03.BLOCO', [300, 600], 'div-gpt-ad-1522094856820-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+
+    <script>
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/36847465/01.02.BLOCO', [300, 250], 'div-gpt-ad-1522097272097-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+      });
+    </script>
+
+    <script>
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/36847465/01.04.BLOCO', [[728, 90], [970, 90]], 'div-gpt-ad-1522097772449-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
         googletag.enableServices();
       });
     </script>

@@ -6,9 +6,9 @@
 				<span>Publicidade</span>
 				<div>
 					<!-- /36847465/01.01.BLOCO -->
-					<div id='div-gpt-ad-1522019374350-0'>
+					<div id='div-gpt-ad-1522083229326-0'>
 					<script>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522019374350-0'); });
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522083229326-0'); });
 					</script>
 					</div>
 				</div>	
@@ -310,9 +310,15 @@
 			<div class="oac-publi publi-970x90">
 				<span>Publicidade</span>
 				<div>
-					<a href="/">
-						<img src="<?=PATH_TEMPLATE?>assets/images/970x90-publi.jpeg">
-					</a>
+					<!-- oac_responsivo_grande -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-9210129523880937"
+					     data-ad-slot="2386010219"
+					     data-ad-format="auto"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
 				</div>	
 			</div>
 		</div>
@@ -480,9 +486,12 @@
 			<div class="oac-publi-meia-pagina mt-2">
 				<span>Publicidade</span>
 				<div>
-					<a href="/">
-						<img src="<?=PATH_TEMPLATE?>assets/images/300x600-publi.jpg">
-					</a>
+					<!-- /36847465/01.03.BLOCO -->
+					<div class="dfp" id='div-gpt-ad-1522094856820-0' style='height:600px; width:300px;'>
+					<script>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522094856820-0'); });
+					</script>
+					</div>
 				</div>	
 			</div>
 		</div>
@@ -494,9 +503,12 @@
 			<div class="oac-publi-retangulo-medio mt-2">
 				<span>Publicidade</span>
 				<div>
-					<a href="/">
-						<img src="<?=PATH_TEMPLATE?>assets/images/300x250-publi.jpg">
-					</a>
+					<!-- /36847465/01.02.BLOCO -->
+                    <div class="dfp" id='div-gpt-ad-1522097272097-0' style='height:250px; width:300px;'>
+                    <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522097272097-0'); });
+                    </script>
+                    </div>
 				</div>	
 			</div>
 		</div>
@@ -540,9 +552,15 @@
 			<div class="oac-publi publi-970x90 mt-2">
 				<span>Publicidade</span>
 				<div>
-					<a href="/">
-						<img src="<?=PATH_TEMPLATE?>assets/images/970x90-publi.jpeg">
-					</a>
+					<!-- oac_responsivo_grande -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-9210129523880937"
+					     data-ad-slot="2386010219"
+					     data-ad-format="auto"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
 				</div>	
 			</div>
 		</div>
@@ -676,11 +694,11 @@
 			<div class="oac-populares">
 				<h2 class="titulo-box"><span>populares</span></h2>
 				<div class="sub-editorias">
-					<a href="<?=URL_SITE?>politica">Política</a>
-					<a href="<?=URL_SITE?>cotidiano">Cotidiano</a>
-					<a href="<?=URL_SITE?>especiais">Especiais</a>
-					<a href="<?=URL_SITE?>evangelicas">Evangélicas</a>
-					<a href="<?=URL_SITE?>cidades">Cidades</a>
+					<a href="<?=URL_SITE?>c/politica">Política</a>
+					<a href="<?=URL_SITE?>c/cotidiano">Cotidiano</a>
+					<a href="<?=URL_SITE?>c/especiais">Especiais</a>
+					<a href="<?=URL_SITE?>c/evangelicas">Evangélicas</a>
+					<a href="<?=URL_SITE?>c/cidades">Cidades</a>
 				</div>
 				<?php
                     $args = array(
@@ -688,7 +706,7 @@
                             'post_status'   => 'publish',
                             'date_query'    => array(
                                 'column'    => 'post_date',
-                                'after'     => '- 10 days'
+                                'after'     => '- 4 days'
                             ),
                             'showposts'     => 6,
                             'meta_key'      => 'post_views_count',
@@ -736,7 +754,7 @@
                                 'post_status'   => 'publish',
                                 'date_query'    => array(
                                     'column'    => 'post_date',
-                                    'after'     => '- 15 days'
+                                    'after'     => '- 7 days'
                                 ),
                                 'showposts'     => 5,
                                 'meta_key'      => 'post_views_count',
@@ -772,9 +790,14 @@
 			<div class="oac-publi-retangulo-medio mt-2">
 				<span>Publicidade</span>
 				<div>
-					<a href="/">
-						<img src="<?=PATH_TEMPLATE?>assets/images/300x250-publi.jpg">
-					</a>
+					<!-- oac_retangulo_medio -->
+					<ins class="adsbygoogle"
+					     style="display:inline-block;width:300px;height:250px"
+					     data-ad-client="ca-pub-9210129523880937"
+					     data-ad-slot="2501985316"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
 				</div>	
 			</div>
 		</div>

@@ -5,9 +5,12 @@
             <div class="oac-publi publi-970x90">
                 <span>Publicidade</span>
                 <div>
-                    <a href="/">
-                        <img src="<?=PATH_TEMPLATE?>assets/images/970x90-publi.jpeg">
-                    </a>
+                    <!-- /36847465/01.04.BLOCO -->
+                    <div class="dfp" id='div-gpt-ad-1522097772449-0'>
+                    <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522097772449-0'); });
+                    </script>
+                    </div>
                 </div>  
             </div>
         </div>
@@ -60,9 +63,12 @@
                             <div class="oac-publi-meia-pagina mt-2">
                                 <span>Publicidade</span>
                                 <div>
-                                    <a href="/">
-                                        <img src="<?=PATH_TEMPLATE?>assets/images/300x600-publi.jpg">
-                                    </a>
+                                    <!-- /36847465/01.03.BLOCO -->
+                                    <div class="dfp" id='div-gpt-ad-1522094856820-0' style='height:600px; width:300px;'>
+                                    <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522094856820-0'); });
+                                    </script>
+                                    </div>
                                 </div>  
                             </div>
 
@@ -111,9 +117,12 @@
                             <div class="oac-publi-retangulo-medio mt-2">
                                 <span>Publicidade</span>
                                 <div>
-                                    <a href="/">
-                                        <img src="<?=PATH_TEMPLATE?>assets/images/300x250-publi.jpg">
-                                    </a>
+                                    <!-- /36847465/01.02.BLOCO -->
+                                    <div class="dfp" id='div-gpt-ad-1522097272097-0' style='height:250px; width:300px;'>
+                                    <script>
+                                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522097272097-0'); });
+                                    </script>
+                                    </div>
                                 </div>  
                             </div>
 

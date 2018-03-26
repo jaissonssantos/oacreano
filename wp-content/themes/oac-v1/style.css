@@ -1508,6 +1508,9 @@ footer .copyright{
     .publi-970x90 img, .oac-publi-retangulo-medio img, .oac-publi-meia-pagina img{
         width: 100%;
     }
+    .div-gpt-ad-1522019374350-0 #google_image_div .img_ad{
+        width: 100% !important;
+    }
     .oac-ic_full{
         display: block;
         width: 170px;
@@ -1615,6 +1618,9 @@ footer .copyright{
     .publi-970x90 img, .oac-publi-retangulo-medio img, .oac-publi-meia-pagina img{
         width: 100%;
     }
+    .div-gpt-ad-1522019374350-0 #google_image_div .img_ad{
+        width: 100% !important;
+    }
     .oac-ic_full, .oac-topo-reduzido .oac-logotipo img:first-child{
         display: none;
     }
@@ -1657,8 +1663,11 @@ footer .copyright{
     .oac-header .oac-menu-acesso-rapido li:first-child + li{
         display: inline-block;
     }
+    .oac-menu-acesso-rapido li:first-child + li{
+        display: none !important;
+    }
     .oac-header .oac-menu-acesso-rapido li:first-child{
-        display: inline-block;
+        display: none;
         margin-right: 0;
         padding: 22px 4px;
     }
@@ -1782,6 +1791,11 @@ footer .copyright{
     footer ul li{
         display: inline-table;
     }
+}
+
+/* Rules DFP and Adsense*/
+.dfp{
+    margin: 0 auto; 
 }
 
 /* Rules for sizing the icon. */
