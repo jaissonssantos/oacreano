@@ -5,9 +5,14 @@
             <div class="oac-publi publi-970x90">
                 <span>Publicidade</span>
                 <div>
-                    <a href="/">
-                        <img src="<?=PATH_TEMPLATE?>assets/images/970x90-publi.jpeg">
-                    </a>
+                    <!-- oac_horizontal_grande -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:970px;height:90px"
+                         data-ad-client="ca-pub-9210129523880937"
+                         data-ad-slot="6064766312"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>  
             </div>
         </div>

@@ -255,7 +255,7 @@ a, a:link, a:hover {
     z-index: 100;
 }
 
-.oac-search-box form #s{
+.oac-search-box form #query{
 	background: none;
     border: 0;
     color: #fff;
@@ -1642,7 +1642,10 @@ footer .copyright{
         margin: 0;
     }
     .oac-header .oac-menu{
-        margin-top: 10px;
+        margin-top: 20px;
+    }
+    .oac-header .oac-menu i{
+        font-size: 24px;
     }
     .oac-header .oac-logotipo{
         margin-top: 20px;
@@ -1652,11 +1655,12 @@ footer .copyright{
     }
     .oac-header .oac-menu-acesso-rapido li,
     .oac-header .oac-menu-acesso-rapido li:first-child + li{
-        display: none;
+        display: inline-block;
     }
     .oac-header .oac-menu-acesso-rapido li:first-child{
-        display: block;
+        display: inline-block;
         margin-right: 0;
+        padding: 22px 4px;
     }
     .oac-header .oac-menu-acesso-rapido li span{
         display: none;
@@ -1667,7 +1671,10 @@ footer .copyright{
     .m-ver-mais .dropdown{
         width: 320px;
         right: -230px;
-        height: auto;
+        min-height: 1000px;
+    }
+    .m-ver-mais .dropdown .m-ico-dropdown:last-child{
+        margin-bottom: 50px;
     }
     .oac-destaque-esquerdo{
         height: 260px;
@@ -1702,8 +1709,9 @@ footer .copyright{
     .bloco-container-2 .chamada section h4{
         font: 0.675em/130% "Raleway", sans-serif;
     }
-    .bloco-container-3 .chamada .picture, .bloco-container-4 .chamada .picture, .bloco-container-5 .chamada .picture{
+    .bloco-container-3 .chamada .picture, .bloco-container-4 .chamada .picture, .bloco-container-5 .chamada .picture, .bloco-container-6 .chamada .picture{
         width: 100%;
+        height: 180px;
     }
     .container-video{
         height: 840px;
@@ -1765,8 +1773,11 @@ footer .copyright{
         margin-left: 35px;
         margin-bottom: 20px;
     }
+    .footer-bar .icons{
+        margin-left: 80px;
+    }
     footer{
-        margin-top: 150px;
+        margin-top: 160px;
     }
     footer ul li{
         display: inline-table;

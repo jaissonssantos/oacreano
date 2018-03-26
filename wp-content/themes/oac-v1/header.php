@@ -39,6 +39,8 @@
       gtag('config', 'UA-115987227-1');
     </script>
 
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
     <script>
       var googletag = googletag || {};
