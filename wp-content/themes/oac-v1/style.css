@@ -12,6 +12,7 @@ a, a:link, a:hover {
 	transition: all 5s;
 	position: relative;
 	z-index: 102;
+    margin-top: -24px;
 }
 
 .oac-topo {
@@ -1879,6 +1880,11 @@ footer .copyright{
     footer ul li{
         display: inline-table;
     }
+}
+
+/*OneSignal*/
+.onesignal-bell-launcher-button{
+    display: none;
 }
 
 /* Rules DFP and Adsense*/
