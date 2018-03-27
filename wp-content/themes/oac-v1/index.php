@@ -21,7 +21,7 @@
 			<div class="bloco-container-plantao">
 				<?php 
 		            $categoria = get_cat_id('plantão');
-		            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+		            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
 	            <?php if(have_posts()): while (have_posts()) : the_post();?>
 				<article class="chamada">
 					<a href="<?=the_permalink()?>" title="<?=the_title()?>">
@@ -60,7 +60,7 @@
 		<div class="col-sm-6">
 			<?php 
 	            $categoria = get_cat_id('últimas notícias');
-	            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+	            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
             <?php if(have_posts()): while (have_posts()) : the_post();?>
 			<article class="oac-destaque oac-destaque-esquerdo">
 				<a href="<?=the_permalink()?>" title="<?=the_title()?>">
@@ -152,7 +152,7 @@
 			<div class="bloco-container-1">
 				<?php 
 		            $categoria = get_cat_id('política');
-		            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+		            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
 	            <?php if(have_posts()): while (have_posts()) : the_post();?>
 				<article class="chamada">
 					<a href="<?=the_permalink()?>" title="<?=the_title()?>">
@@ -195,7 +195,7 @@
 						<iframe id="frame_video" src="" frameborder="0" class="hidden-xs-up" allowfullscreen></iframe>
 						<?php 
 				            $categoria = get_cat_id('vídeos');
-				            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+				            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="oac-video oac-video-esquerdo" id="palco_video">
 							
@@ -371,7 +371,7 @@
 					<div class="bloco-container-2 mt-2">
 						<?php 
 				            $categoria = get_cat_id('cotidiano');
-				            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+				            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
 			            <?php if(have_posts()): while (have_posts()) : the_post();?>
 						<article class="chamada">
 							<a href="<?=the_permalink()?>" title="<?=the_title()?>">
@@ -556,7 +556,7 @@
 			<div class="bloco-container-2 mt-2">
 				<?php 
 		            $categoria = get_cat_id('evangélicas');
-		            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+		            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
 	            <?php if(have_posts()): while (have_posts()) : the_post();?>
 				<article class="chamada">
 					<a href="<?=the_permalink()?>" title="<?=the_title()?>">
@@ -611,7 +611,7 @@
 			<div class="bloco-container-4">
 				<?php 
 		            $categoria = get_cat_id('cidades');
-		            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+		            query_posts('showposts=1&offset=0&post_status=publish&order=DESC&cat='.$categoria);?>
 	            <?php if(have_posts()): while (have_posts()) : the_post();?>
 				<article class="chamada">
 					<a href="<?=the_permalink()?>" title="<?=the_title()?>">
