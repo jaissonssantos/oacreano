@@ -17,6 +17,12 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'thumbnails-480x320', 480, 320, true ); //(cropped)
 }
 
+//plugin SEOPRESS
+function seopress_theme_slug_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'seopress_theme_slug_setup' );
+
 /* Adicionando meta tags ao header */
 function add_meta_tags_facebook() {
     if (is_single()){

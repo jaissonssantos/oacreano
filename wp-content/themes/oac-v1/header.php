@@ -27,7 +27,7 @@
     <link href="<?=PATH_TEMPLATE?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=PATH_TEMPLATE?>assets/css/hidden.css" rel="stylesheet">
     <link href="<?=PATH_TEMPLATE?>style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="<?=PATH_TEMPLATE?>favicon.ico" />
+    <link rel="shortcut icon" href="<?=PATH_TEMPLATE?>favicon.svg" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115987227-1"></script>
@@ -217,11 +217,7 @@
 
 
     <div class="oac-search-box hidden-xs-up">
-        <form method="get" action="<?=URL_SITE?>s=">
-            <input type="text" name="s" id="s" value="Busca" 
-            onfocus="if (this.value == 'Busca'){ this.value = ''; }" 
-            onblur="if (this.value == '') { this.value = 'Busca' }">
-        </form>
+        <?php get_search_form(); ?>
     </div>
 
     <div class="oac-opacidade-menu hidden-xs-up"></div>

@@ -6,12 +6,52 @@
 				<span>Publicidade</span>
 				<div>
 					<!-- /36847465/01.01.BLOCO -->
-					<div id='div-gpt-ad-1522083229326-0'>
+					<div class="dfp" id='div-gpt-ad-1522083229326-0'>
 					<script>
 					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522083229326-0'); });
 					</script>
 					</div>
 				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="row"><!-- categoria(plantao) -->
+		<div class="col-sm-12">
+			<div class="bloco-container-plantao">
+				<?php 
+		            $categoria = get_cat_id('plantão');
+		            query_posts('showposts=1&offset=0&order=DESC&cat='.$categoria);?>
+	            <?php if(have_posts()): while (have_posts()) : the_post();?>
+				<article class="chamada">
+					<a href="<?=the_permalink()?>" title="<?=the_title()?>">
+						<div class="picture">
+							<?php if(has_post_thumbnail()) : ?>
+								<?php $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnails-660x440'); ?>
+								<figure style="background-image: url('<?=$thumbnail[0]?>');"></figure>
+							<?php endif; ?>
+						</div>
+						<section>
+							<?php 
+		                        $key_legenda = "legenda";
+		                        $cp_legenda  = get_post_meta($post->ID,$key_legenda,true);
+		                        if(isset($cp_legenda) && $cp_legenda >= '') :
+		                    ?>
+							<h3><span><?=$cp_legenda?></span></h3>
+							<?php endif; ?>
+							<h5>
+								<i class="fas fa-bullseye"></i>
+								<span>PLANTÃO</span>
+							</h5>
+							<h1><span><?=the_title()?></span></h1>
+							<?php  if(has_excerpt()) : ?>
+							<h4><span><?=the_excerpt()?></span></h4>
+							<?php endif; ?>
+						</section>
+					</a>
+				</article>
+				<?php endwhile; else:?>
+        		<?php endif;?>
 			</div>
 		</div>
 	</div>
