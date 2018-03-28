@@ -6,9 +6,9 @@
                 <span>Publicidade</span>
                 <div>
                     <!-- /36847465/01.04.BLOCO -->
-                    <div class="dfp" id='div-gpt-ad-1522097772449-0'>
+                    <div class="dfp" id='div-gpt-ad-1522246466111-0'>
                     <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522097772449-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1522246466111-0'); });
                     </script>
                     </div>
                 </div>  
